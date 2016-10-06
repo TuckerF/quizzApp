@@ -1,0 +1,313 @@
+
+html{
+	color: black;
+}
+
+.background {
+	height: 100%;
+    margin: 0;
+	background-image: url(../media/Backgrounds/coruscant.jpg);
+  	background-repeat: no-repeat;
+  	background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.backgroundOne {
+	background-size: cover;
+	height: 100%;
+    margin: 0;
+	background-image: url(../media/Backgrounds/backgroundOne.jpg);
+  	background-repeat: no-repeat;
+  	background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+h1 {
+	font-family: 'Julius Sans One';
+	text-align: center;
+	color: white;
+	margin: 0 auto 6rem auto;
+	font-size: 3rem;
+}
+
+#questionOne {
+	width: 96%;
+	min-width: 1222px;
+	margin: 0 auto 0 auto;
+	padding-top: 6rem;
+}
+
+.border {
+	height: 200px;
+	width: 200px;
+	border-radius: 20%;
+	margin: 0 auto 0 auto;
+	border:solid 10px rgba(255, 255, 255, 0.4);
+}
+
+.border2 {
+	height: 200px;
+	width: 200px;
+	border-radius: 20%;
+	margin: 0 auto 0 auto;
+	border:solid 10px rgba(0, 0, 0, 1);}
+
+.answerBlock {
+	display: inline-block;
+	width: 240px;
+	height: 240px;
+}
+
+.images {
+	height: 200px;
+	width: 200px;
+	margin: 0 auto 0 auto;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	border-radius: 17%;
+}
+
+.optionText {
+	font-family: 'Julius Sans One';
+	color: white;
+	font-weight: 500;
+	font-size: 1.3rem;
+	width: 200px;
+	text-align: center;
+	display: block;
+	margin: 0 auto 0 auto;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	letter-spacing: 1px;
+	cursor: default;
+}
+
+#guessBox {
+	margin: 4rem auto 0 auto;
+	width: 520px;
+	height: 70px;
+	display: flex;
+	justify-content: center; /* align horizontal */
+	align-items: center;
+	color: white;
+	font-family: 'Julius Sans One';
+	font-size: 1.8rem;
+	font-weight: 500;
+	background-color: rgba(0, 0, 0, 0.4);
+	border: 1px solid white;
+	border-radius: .6rem;
+}
+
+#guessButton {
+	display: inline-block;
+	border-left: solid white 1px;
+	text-align: center;
+	height: 53px;
+	padding-top: 17px;
+	width: 170px;
+	border-top-right-radius: .6rem;
+	border-bottom-right-radius: .6rem;
+	-webkit-transition: background .5s ease-in-out;
+	-moz-transition: background .5s ease-in-out;
+	-ms-transition: background .5s ease-in-out;
+	-o-transition: background .5s ease-in-out;
+	transition: background .5s ease-in-out;
+}
+
+.nextContainer {
+	width: 632px;
+	margin: 2rem auto 0 auto;
+}
+
+.nextButton {
+	color: white;
+	font-family: 'Julius Sans One';
+	font-size: 1.6rem;
+	font-weight: 400px;
+	display: flex;
+	justify-content: center; /* align horizontal */
+	align-items: center;
+	float: right;
+	margin-bottom: 2rem;
+	height: 65px;
+	width: 150px;
+	background-color: rgba(0, 0, 0, .7);
+	border: solid white 1px;
+	text-align: center;
+	border-radius: .5rem;
+	-webkit-transition: background .5s ease-in-out;
+	-moz-transition: background .5s ease-in-out;
+	-ms-transition: background .5s ease-in-out;
+	-o-transition: background .5s ease-in-out;
+	transition: background .5s ease-in-out;
+}
+
+.nextButton:hover {
+	background-color: rgba(0, 0, 0, 1);
+	cursor: pointer;
+	-webkit-transition: background .5s ease-in-out;
+	-moz-transition: background .5s ease-in-out;
+	-ms-transition: background .5s ease-in-out;
+	-o-transition: background .5s ease-in-out;
+	transition: background .5s ease-in-out;
+}
+
+#guessButton:hover {
+	background-color: rgba(0, 0, 0, 1);
+	cursor: pointer;
+	-webkit-transition: background .5s ease-in-out;
+	-moz-transition: background .5s ease-in-out;
+	-ms-transition: background .5s ease-in-out;
+	-o-transition: background .5s ease-in-out;
+	transition: background .5s ease-in-out;
+}
+
+#userGuess {
+	width: 340px;
+	font-size: 1.7rem;
+	cursor: default;
+	text-align:center;
+}
+
+.warningMessage {
+	display: block;
+	color: white;
+	font-size: 1.3rem;
+	font-weight: 200;
+	font-family: 'Julius Sans onClick';
+	height: 50px;
+	width: 260px;
+	text-align: center;
+	border: 1px solid white;
+	background: rgba(201, 30, 30, .5);
+	margin: 2rem auto 0 auto;
+	border-radius: .5rem;
+	display: flex;
+	justify-content: center; /* align horizontal */
+	align-items: center;
+	padding-bottom: 5px;
+}
+
+.correctMessage {
+	display: block;
+	color: white;
+	font-size: 2rem;
+	font-weight: 200;
+	cursor: default;
+	font-family: "Julius Sans One";
+	height: 50px;
+	width: 632px;
+	text-align: center;
+	border: 1px solid white;
+	background: rgba(16, 97, 41, .8);
+	margin: 2rem auto 0 auto;
+	border-top-left-radius: .5rem;
+	border-top-right-radius: .5rem;
+	display: flex;
+	justify-content: center; /* align horizontal */
+	align-items: center;
+	padding-bottom: 5px;
+}
+
+.incorrectMessage {
+	display: block;
+	color: white;
+	font-size: 2rem;
+	cursor: default;
+	font-weight: 500;
+	height: 50px;
+	width: 632px;
+	text-align: center;
+	border: 1px solid white;
+	background: rgba(201, 30, 30, .8);
+	margin: 2rem auto 0 auto;
+	border-top-left-radius: .5rem;
+	border-top-right-radius: .5rem;
+	display: flex;
+	justify-content: center; /* align horizontal */
+	align-items: center;
+	padding-bottom: 5px;
+}
+
+.fact {
+	display: block;
+	color: white;
+	cursor: default;
+	font-size: 1.7rem;
+	font-family: 'Julius Sans One';
+	font-weight: 500;
+	width: 600px;
+	text-align: center;
+	padding: 1rem;
+	border: 1px solid white;
+	background: rgba(0, 0, 0, .8);
+	margin:0 auto 0 auto;
+	border-bottom-left-radius: .5rem;
+	border-bottom-right-radius: .5rem;
+	display: flex;
+	border-top: none;
+	justify-content: center; /* align horizontal */
+	align-items: center;
+}
+
+.opacityFeature {
+	opacity:.6;
+	-webkit-transition: opacity .3s ease-in-out;
+	-moz-transition: opacity .3s ease-in-out;
+	-ms-transition: opacity .3s ease-in-out;
+	-o-transition: opacity .3s ease-in-out;
+	transition: opacity .3s ease-in-out;
+	height: 200px;
+	width: 200px;
+}
+
+.opacityNeeded {
+	height: 200px;
+	width: 200px;
+}
+
+.spaceRight {
+	padding-right: 10px;
+}
+
+.spaceLeft {
+	padding-left: 10px;
+}
+
+.onClick {
+	opacity: .7;
+}
+
+.darthNihilusIMG {
+	background: url(../media/questionOne/darthNihilus.jpg);
+}
+
+.darthPlagueisIMG {
+	background-image: url(../media/questionOne/darthPlagueis.jpg);
+}
+
+.exarKunIMG {
+	background-image: url(../media/questionOne/exarKun.jpg);
+}
+
+.valkorionIMG {
+	background-image: url(../media/questionOne/valkorion.png);
+}
+
+.darthBaneIMG {
+	background-image: url(../media/questionOne/darthBane.jpg);
+}
+
+.bethAllusisIMG {
+	background-image: url(../media/questionOne/bethAllusis.jpg);
+}
+.odanUrrIMG {
+	background-image: url(../media/questionTwo/odanUrr.jpg);
+}
+
+
+
+
