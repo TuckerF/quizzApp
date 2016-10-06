@@ -6,7 +6,7 @@ html{
 .background {
 	height: 100%;
     margin: 0;
-	background-image: url(../media/Backgrounds/coruscant.JPG);
+	background-image: url(../media/Backgrounds/coruscant.jpg);
   	background-repeat: no-repeat;
   	background-repeat: no-repeat;
     background-attachment: fixed;
@@ -282,7 +282,7 @@ h1 {
 }
 
 .darthNihilusIMG {
-	background: url(../media/questionOne/darthNihilus.JPG);
+	background: url(../media/questionOne/darthNihilus.jpg);
 }
 
 .darthPlagueisIMG {
