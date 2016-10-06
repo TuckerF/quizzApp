@@ -6,7 +6,7 @@ html{
 .background {
 	height: 100%;
     margin: 0;
-	background-image: url(../media/Backgrounds/coruscant.jpg);
+	background-image: url(../media/coruscant.jpg);
   	background-repeat: no-repeat;
   	background-repeat: no-repeat;
     background-attachment: fixed;
@@ -16,7 +16,7 @@ html{
 	background-size: cover;
 	height: 100%;
     margin: 0;
-	background-image: url(../media/Backgrounds/backgroundOne.JPG);
+	background-image: url(../media/backgroundOne.jpg);
   	background-repeat: no-repeat;
   	background-repeat: no-repeat;
     background-attachment: fixed;
