@@ -6,7 +6,7 @@ html{
 .background {
 	height: 100%;
     margin: 0;
-	background-image: url(../media/Backgrounds/coruscant.jpg);
+	background-image: url(../media/Backgrounds/coruscant.JPG);
   	background-repeat: no-repeat;
   	background-repeat: no-repeat;
     background-attachment: fixed;
@@ -16,7 +16,7 @@ html{
 	background-size: cover;
 	height: 100%;
     margin: 0;
-	background-image: url(../media/Backgrounds/backgroundOne.jpg);
+	background-image: url(../media/Backgrounds/backgroundOne.JPG);
   	background-repeat: no-repeat;
   	background-repeat: no-repeat;
     background-attachment: fixed;
@@ -282,7 +282,7 @@ h1 {
 }
 
 .darthNihilusIMG {
-	background: url(../media/questionOne/darthNihilus.jpg);
+	background: url(../media/questionOne/darthNihilus.JPG);
 }
 
 .darthPlagueisIMG {
@@ -305,7 +305,7 @@ h1 {
 	background-image: url(../media/questionOne/bethAllusis.jpg);
 }
 .odanUrrIMG {
-	background-image: url(../media/questionTwo/odanUrr.jpg);
+	background-image: url(../media/questionTwo/odanUrr.JPG);
 }
 
 
