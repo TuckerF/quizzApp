@@ -11,62 +11,68 @@
 	<script src="https://use.fontawesome.com/96fbd156cf.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Crimson+Text:600|Julius+Sans+One" rel="stylesheet">
 </head>
+
 <body id="background" class="background">
+	<div id="absoluteMessageContainer">
+		<div id="moveUserGuess"></div>
+		<div id="messageBox" class="messageBox">
+			<span id="incorrectMessage" class="incorrectMessage">Incorrect</span>
+			<span class="fact">The correct answer was Darth Plagueis. He was a male Dark Lord of the Sith and the master of Darth Sidious. He acquired considerable knowledge in the field of midi-chlorian manipulation, but was ultimately betrayed and murdered by his own apprentice, in accordance with the "Rule of Two." Sidious later recounted the tale of his master's demise to lure Anakin Skywalker to the dark side.</span>
+		</div>
+		<div id="nextContainer">
+			<span id="nextButton" class="nextButton">
+				Next 
+				<span class="fa fa-long-arrow-right spaceLeft"></span>
+			</span>
+		</div>
+	</div>
+
 		<!-- QUESTION 1 -->
+
 	<div id="questionOne">	
 		<h1>Who taught Darth Sideous?</h1>
 		<div class="answerBlock"> 
 			<div id="answerOne" class="border answerOne">
 				<div id="imageOne" class="darthNihilusIMG images">
-					<div class="opacityNeeded">
-						<span id="textOne" class="optionText">
-						Darth Nihilus
-						</span>
-					</div>
+					<span id="textOne" class="optionText">
+					Darth Nihilus
+					</span>
 				</div>
 			</div>
 		</div>
 		<div class="answerBlock"> 
 			<div id="answerTwo" class="border answerTwo">
 				<div id="imageTwo" class="darthPlagueisIMG images">
-					<div class="opacityNeeded">
-						<span id="textTwo" class="optionText">
-						Darth Plagueis
-						</span>
-					</div>
+					<span id="textTwo" class="optionText">
+					Darth Plagueis
+					</span>
 				</div>
 			</div>
 		</div>
 		<div class="answerBlock"> 
 			<div id="answerThree" class="border answerThree">
 				<div id="imageThree" class="exarKunIMG images">
-					<div class="opacityNeeded">
-						<span id="textThree" class="optionText">
-						Exar Kun
-						</span>
-					</div>
+					<span id="textThree" class="optionText">
+					Exar Kun
+					</span>
 				</div>
 			</div>
 		</div>
 		<div class="answerBlock"> 
 			<div id="answerFour" class="border answerFour">
 				<div id="imageFour" class="valkorionIMG images">
-					<div class="opacityNeeded">
-						<span id="textFour" class="optionText">
-						Valkorion
-						</span>
-					</div>
+					<span id="textFour" class="optionText">
+					Valkorion
+					</span>
 				</div>
 			</div>
 		</div>
 		<div class="answerBlock"> 
 			<div id="answerFive" class="border answerFive">
 				<div id="imageFive" class="darthBaneIMG images">
-					<div class="opacityNeeded">
-						<span id="textFive" class="optionText">
-						Darth Bane
-						</span>
-					</div>
+					<span id="textFive" class="optionText">
+					Darth Bane
+					</span>
 				</div>
 			</div>
 		</div>
@@ -76,9 +82,6 @@
 	<div id="guessBox">
 		<div id="userGuess" class="userGuess">Select Icon</div>
 		<div id="guessButton">Submit</div>
-	</div>
-	<div id="messageBox" class="messageBox"></div>
-	<div id="nextContainer">
 	</div>
 </body>
 </html>

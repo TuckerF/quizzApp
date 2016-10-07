@@ -10,29 +10,44 @@ $(document).ready(function(){
 		var guess = $(".userGuess").text();
 			console.log(guess);
 			if (guess == "Darth Plagueis"){
-				$("#questionOne").remove();
-				$("#background").addClass("backgroundOne");
 				$("#guessButton").remove();
-				$("#messageBox").append("<span class='correctMessage'>Correct !</span><span class='fact'>Darth Plagueis was a male Dark Lord of the Sith and the master of Darth Sidious. He acquired considerable knowledge in the field of midi-chlorian manipulation, but was ultimately betrayed and murdered by his own apprentice, in accordance with the \"Rule of Two.\" Sidious later recounted the tale of his master's demise to lure Anakin Skywalker to the dark side.</span>").hide().fadeIn(1000);
-				$("#userGuess").css("font-size", "2.5rem").hide().fadeIn(1000);
-				$("#guessBox").css({
-					"margin-top" : "4rem",
-					"background-color" : "rgba(0, 0, 0, 0.8)"
+				$("h1").empty();
+				$("#questionOne").css("margin-top", "52px");
+				$("#absoluteMessageContainer").hide().fadeIn(1000);
+				$("#incorrectMessage").removeClass("incorrectMessage").addClass("correctMessage");
+				$(".fact").empty().append("Darth Plagueis was a male Dark Lord of the Sith and the master of Darth Sidious. He acquired considerable knowledge in the field of midi-chlorian manipulation, but was ultimately betrayed and murdered by his own apprentice, in accordance with the \"Rule of Two.\" Sidious later recounted the tale of his master's demise to lure Anakin Skywalker to the dark side.");
+				$("#userGuess").removeClass("userGuess").css("font-size", "2.5rem").hide().fadeIn(1000);
+				$("#guessBox").appendTo("#moveUserGuess").css({
+					"margin-top" : "0",
+					"background-color" : "rgba(255, 255, 255, 0.9)",
+					"color" : "black",
+					"border" : "3px solid black"
 				});
-				$("#nextContainer").addClass("nextContainer").append("<span id='nextButton' class='nextButton'>Next <span class='fa fa-long-arrow-right spaceLeft'></span></span>");
+				$("#answerOne").removeClass("answerOne").addClass("opacityFeature");
+				$("#answerTwo").removeClass("answerTwo").addClass("opacityFeature");
+				$("#answerThree").removeClass("answerThree").addClass("opacityFeature");
+				$("#answerFour").removeClass("answerFour").addClass("opacityFeature");
+				$("#answerFive").removeClass("answerFive").addClass("opacityFeature");
 			}
+
 			//Tells User they were incorrect and provides fact
 			else if (guess == "Darth Nihilus" || guess == "Exar Kun" || guess == "Valkorion" || guess == "Darth Bane") {
-				$("#questionOne").remove();
-				$("#background").addClass("backgroundOne");
 				$("#guessButton").remove();
-				$("#messageBox").append("<span class='incorrectMessage'>Incorrect</span><span class='fact'>The correct answer was Darth Plagueis. He was a male Dark Lord of the Sith and the master of Darth Sidious. He acquired considerable knowledge in the field of midi-chlorian manipulation, but was ultimately betrayed and murdered by his own apprentice, in accordance with the \"Rule of Two.\" Sidious later recounted the tale of his master's demise to lure Anakin Skywalker to the dark side.</span>").hide().fadeIn(1000);
-				$("#userGuess").css("font-size", "2.5rem").hide().fadeIn(1000);
-				$("#guessBox").css({
-					"margin-top" : "4rem",
-					"background-color" : "rgba(0, 0, 0, 0.8)"
+				$("h1").empty();
+				$("#questionOne").css("margin-top", "52px");
+				$("#absoluteMessageContainer").hide().fadeIn(1000);
+				$("#userGuess").removeClass("userGuess").css("font-size", "2.5rem").hide().fadeIn(1000);
+				$("#guessBox").appendTo("#moveUserGuess").css({
+					"margin-top" : "0",
+					"background-color" : "rgba(0, 0, 0, 0.8)",
+					"color" : "white",
+					"border" : "1px solid white"
 				});
-				$("#nextContainer").addClass("nextContainer").append("<span id='tooQuestion2' class='nextButton'>Next <span class='fa fa-long-arrow-right spaceLeft'></span></span>");
+				$("#answerOne").removeClass("answerOne").addClass("opacityFeature");
+				$("#answerTwo").removeClass("answerTwo").addClass("opacityFeature");
+				$("#answerThree").removeClass("answerThree").addClass("opacityFeature");
+				$("#answerFour").removeClass("answerFour").addClass("opacityFeature");
+				$("#answerFive").removeClass("answerFive").addClass("opacityFeature");
 			}
 		});
 
@@ -46,12 +61,12 @@ $(document).ready(function(){
 		});
 
 	//cyles through Questions Text placing them in the h1 element
-    $("#guessButton").click(function (){
-		var guess = $(".userGuess").text();
-		if (counter >= questions.length || guess == "Select Icon") return; // the >= operator prevents the counter from resetting onece it cyles thorugh the whole quesiton when it reaches the length of the array.
-		$("h1").empty().append(questions[counter]);
-		counter = (counter + 1); // increments counter after displaying the string in position 0.
-    });
+    //$("#guessButton").click(function (){
+		//var guess = $(".userGuess").text();
+		//if (counter >= questions.length || guess == "Select Icon") return; // the >= operator prevents the counter from resetting onece it cyles thorugh the whole quesiton when it reaches the length of the array.
+		//$("h1").empty().append(questions[counter]);
+		//counter = (counter + 1); // increments counter after displaying the string in position 0.
+    //});
 
     //goes to question two
     $("#tooQuestion2").click(function(){

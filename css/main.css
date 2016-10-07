@@ -12,14 +12,12 @@ html{
     background-attachment: fixed;
 }
 
-.backgroundOne {
-	background-size: cover;
-	height: 100%;
-    margin: 0;
-	background-image: url(../media/backgroundOne.jpg);
-  	background-repeat: no-repeat;
-  	background-repeat: no-repeat;
-    background-attachment: fixed;
+#absoluteMessageContainer {
+	display: none;
+	position: absolute;
+	z-index: 50;
+	top:4rem;
+	left: 50%;
 }
 
 
@@ -101,6 +99,11 @@ h1 {
 	border-radius: .6rem;
 }
 
+.guessBox2 {
+	position: relative;
+	left: -50%;
+}
+
 #guessButton {
 	display: inline-block;
 	border-left: solid white 1px;
@@ -117,9 +120,9 @@ h1 {
 	transition: background .5s ease-in-out;
 }
 
-.nextContainer {
-	width: 632px;
-	margin: 2rem auto 0 auto;
+#nextContainer {
+	position: relative;
+	left: -50%;
 }
 
 .nextButton {
@@ -128,6 +131,7 @@ h1 {
 	font-size: 1.6rem;
 	font-weight: 400px;
 	display: flex;
+	margin-top: 2rem;
 	justify-content: center; /* align horizontal */
 	align-items: center;
 	float: right;
@@ -146,7 +150,9 @@ h1 {
 }
 
 .nextButton:hover {
-	background-color: rgba(0, 0, 0, 1);
+	background-color: rgba(255, 255, 255, .8);
+	color: black;
+	border: solid black 3px;
 	cursor: pointer;
 	-webkit-transition: background .5s ease-in-out;
 	-moz-transition: background .5s ease-in-out;
@@ -222,6 +228,7 @@ h1 {
 	width: 632px;
 	text-align: center;
 	border: 1px solid white;
+	border-bottom: none;
 	background: rgba(201, 30, 30, .8);
 	margin: 2rem auto 0 auto;
 	border-top-left-radius: .5rem;
@@ -230,6 +237,16 @@ h1 {
 	justify-content: center; /* align horizontal */
 	align-items: center;
 	padding-bottom: 5px;
+}
+
+#messageBox {
+	position: relative;
+	left: -50%;
+}
+
+#moveUserGuess {
+	position: relative;
+	left: -50%;
 }
 
 .fact {
@@ -243,12 +260,12 @@ h1 {
 	text-align: center;
 	padding: 1rem;
 	border: 1px solid white;
-	background: rgba(0, 0, 0, .8);
-	margin:0 auto 0 auto;
+	border-top: none;
 	border-bottom-left-radius: .5rem;
 	border-bottom-right-radius: .5rem;
+	background: rgba(0, 0, 0, .8);
+	margin: -1px auto 0 auto;
 	display: flex;
-	border-top: none;
 	justify-content: center; /* align horizontal */
 	align-items: center;
 }
@@ -260,11 +277,6 @@ h1 {
 	-ms-transition: opacity .3s ease-in-out;
 	-o-transition: opacity .3s ease-in-out;
 	transition: opacity .3s ease-in-out;
-	height: 200px;
-	width: 200px;
-}
-
-.opacityNeeded {
 	height: 200px;
 	width: 200px;
 }
