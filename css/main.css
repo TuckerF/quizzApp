@@ -10,6 +10,16 @@ html{
   	background-repeat: no-repeat;
   	background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
+}
+
+.backgroundTwo {
+	height: 100%;
+    margin: 0;
+	background-image: url(../media/AT-ATWoods.jpg);
+  	background-repeat: no-repeat;
+  	background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 #absoluteMessageContainer {
@@ -33,7 +43,7 @@ h1 {
 	width: 96%;
 	min-width: 1222px;
 	margin: 0 auto 0 auto;
-	padding-top: 6rem;
+	padding-top: 5rem;
 }
 
 .border {
@@ -294,31 +304,38 @@ h1 {
 }
 
 .darthNihilusIMG {
-	background: url(../media/darthNihilus.jpg);
+	background: url(../media/questionOne/darthNihilus.jpg);
 }
 
 .darthPlagueisIMG {
-	background-image: url(../media/darthPlagueis.jpg);
+	background-image: url(../media/questionOne/darthPlagueis.jpg);
 }
 
 .exarKunIMG {
-	background-image: url(../media/exarKun.jpg);
+	background-image: url(../media/questionOne/exarKun.jpg);
 }
 
 .valkorionIMG {
-	background-image: url(../media/valkorion.png);
+	background-image: url(../media/questionOne/valkorion.png);
 }
 
 .darthBaneIMG {
-	background-image: url(../media/darthBane.jpg);
+	background-image: url(../media/questionOne/darthBane.jpg);
 }
 
+/*Question 2 images */
+
 .bethAllusisIMG {
-	background-image: url(../media/questionOne/bethAllusis.jpg);
+	background-image: url(../media/bethAllusis.jpg);
 }
 .odanUrrIMG {
-	background-image: url(../media/questionTwo/odanUrr.JPG);
+	background-image: url(../media/odanUrr.JPG);
 }
+
+.lordHothIMG {
+	background-image: url(../media/que);
+}
+
 
 
 

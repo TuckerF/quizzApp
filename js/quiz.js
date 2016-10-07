@@ -14,7 +14,7 @@ $(document).ready(function(){
 				$("h1").empty();
 				$("#questionOne").css("margin-top", "52px");
 				$("#absoluteMessageContainer").hide().fadeIn(1000);
-				$("#incorrectMessage").removeClass("incorrectMessage").addClass("correctMessage");
+				$("#incorrectMessage").removeClass("incorrectMessage").addClass("correctMessage").empty().append("Correct !");
 				$(".fact").empty().append("Darth Plagueis was a male Dark Lord of the Sith and the master of Darth Sidious. He acquired considerable knowledge in the field of midi-chlorian manipulation, but was ultimately betrayed and murdered by his own apprentice, in accordance with the \"Rule of Two.\" Sidious later recounted the tale of his master's demise to lure Anakin Skywalker to the dark side.");
 				$("#userGuess").removeClass("userGuess").css("font-size", "2.5rem").hide().fadeIn(1000);
 				$("#guessBox").appendTo("#moveUserGuess").css({
@@ -55,8 +55,7 @@ $(document).ready(function(){
     $("#guessButton").click(function(){
 		var guess = $(".userGuess").text();
 			if (guess == "Select Icon"){
-				$("#messageBox").append("<span id='warningMessage' class='warningMessage'><span class='fa fa-exclamation-triangle spaceRight'></span>Please Select an Icon</span>");
-				//$("#message").addClass("fa fa-exclamation-triangle").append(" Please Select an Icon");
+				$("#warningMessage").append("<span id='warningMessage' class='warningMessage'><span class='fa fa-exclamation-triangle spaceRight'></span>Please Select an Icon</span>");
 			}
 		});
 
@@ -69,8 +68,8 @@ $(document).ready(function(){
     //});
 
     //goes to question two
-    $("#tooQuestion2").click(function(){
-    	$("#background-color").removeClass("backgroundOne");addClass()
+    $(".tooQuestionTwo").click(function(){
+    	$("#background").removeClass("background").addClass("backgroundTwo");
     });
 
 
