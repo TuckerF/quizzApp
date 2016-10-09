@@ -3,20 +3,14 @@ html{
 	color: black;
 }
 
+body {
+    -webkit-font-smoothing: subpixel-antialiased;
+    text-align: center;
+}
+
 .background {
 	height: 100%;
     margin: 0;
-	background-image: url(../media/coruscant.jpg);
-  	background-repeat: no-repeat;
-  	background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-.backgroundTwo {
-	height: 100%;
-    margin: 0;
-	background-image: url(../media/AT-ATWoods.jpg);
   	background-repeat: no-repeat;
   	background-repeat: no-repeat;
     background-attachment: fixed;
@@ -26,24 +20,32 @@ html{
 	display: none;
 	position: absolute;
 	z-index: 50;
-	top:4rem;
+	top: 3.5rem;
 	left: 50%;
 }
 
 
-h1 {
+.questionContainer {
 	font-family: 'Julius Sans One';
 	text-align: center;
 	color: white;
+	height: 50px;
 	margin: 0 auto 6rem auto;
 	font-size: 3rem;
 }
 
-#questionOne {
+h1 {
+	display: inline;
+}
+
+#header {
+	cursor: default;
+}
+
+.questionOne {
 	width: 96%;
 	min-width: 1222px;
-	margin: 0 auto 0 auto;
-	padding-top: 5rem;
+	margin: 6rem auto 0 auto;
 }
 
 .border {
@@ -80,9 +82,11 @@ h1 {
 .optionText {
 	font-family: 'Julius Sans One';
 	color: white;
-	font-weight: 500;
+	font-weight: 400;
 	font-size: 1.3rem;
 	width: 200px;
+	height:46px;
+	padding-top: 23px;
 	text-align: center;
 	display: block;
 	margin: 0 auto 0 auto;
@@ -93,7 +97,24 @@ h1 {
 	cursor: default;
 }
 
-#guessBox {
+.optionTextGormo {
+	font-family: 'Julius Sans One';
+	color: white;
+	font-weight: 400;
+	font-size: 1.3rem;
+	width: 200px;
+	height:46px;
+	text-align: center;
+	display: block;
+	margin: 0 auto 0 auto;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	letter-spacing: 1px;
+	cursor: default;
+}
+
+.guessBox {
 	margin: 4rem auto 0 auto;
 	width: 520px;
 	height: 70px;
@@ -103,15 +124,44 @@ h1 {
 	color: white;
 	font-family: 'Julius Sans One';
 	font-size: 1.8rem;
-	font-weight: 500;
+	font-weight: 400;
 	background-color: rgba(0, 0, 0, 0.4);
 	border: 1px solid white;
 	border-radius: .6rem;
 }
 
-.guessBox2 {
-	position: relative;
-	left: -50%;
+.guessBoxOnSubmit {
+	margin: 4rem auto 0 auto;
+	width: 400px;
+	height: 70px;
+	display: flex;
+	justify-content: center; /* align horizontal */
+	align-items: center;
+	color: white;
+	font-family: 'Julius Sans One';
+	font-size: 1.8rem;
+	font-weight: 400;
+	background-color: rgba(0, 0, 0, 0.4);
+	border: 1px solid white;
+	border-radius: .6rem;
+}
+
+.guessBoxIncorrect {
+	margin-top: 0rem;
+	background-color: rgba(0, 0, 0, 0.8);
+	color : white;
+	border : 1px solid white;
+}
+
+.guessBoxContainer {
+	margin-top: 2rem;
+}
+
+.guessBoxCorrect {
+	margin-top: 0rem;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+	border: 1px solid white;
 }
 
 #guessButton {
@@ -120,9 +170,19 @@ h1 {
 	text-align: center;
 	height: 53px;
 	padding-top: 17px;
-	width: 170px;
+	width: 180px;
 	border-top-right-radius: .6rem;
 	border-bottom-right-radius: .6rem;
+	-webkit-transition: background .5s ease-in-out;
+	-moz-transition: background .5s ease-in-out;
+	-ms-transition: background .5s ease-in-out;
+	-o-transition: background .5s ease-in-out;
+	transition: background .5s ease-in-out;
+}
+
+#guessButton:hover {
+	background-color: rgba(0, 0, 0, 1);
+	cursor: pointer;
 	-webkit-transition: background .5s ease-in-out;
 	-moz-transition: background .5s ease-in-out;
 	-ms-transition: background .5s ease-in-out;
@@ -171,19 +231,16 @@ h1 {
 	transition: background .5s ease-in-out;
 }
 
-#guessButton:hover {
-	background-color: rgba(0, 0, 0, 1);
-	cursor: pointer;
-	-webkit-transition: background .5s ease-in-out;
-	-moz-transition: background .5s ease-in-out;
-	-ms-transition: background .5s ease-in-out;
-	-o-transition: background .5s ease-in-out;
-	transition: background .5s ease-in-out;
-}
-
-#userGuess {
+.userGuess {
 	width: 340px;
 	font-size: 1.7rem;
+	cursor: default;
+	text-align:center;
+}
+
+.userGuessFontChange {
+	width: 340px;
+	font-size: 2rem;
 	cursor: default;
 	text-align:center;
 }
@@ -192,7 +249,7 @@ h1 {
 	display: block;
 	color: white;
 	font-size: 1.3rem;
-	font-weight: 200;
+	font-weight: 400;
 	font-family: 'Julius Sans onClick';
 	height: 50px;
 	width: 260px;
@@ -211,7 +268,7 @@ h1 {
 	display: block;
 	color: white;
 	font-size: 2rem;
-	font-weight: 200;
+	font-weight: 400;
 	cursor: default;
 	font-family: "Julius Sans One";
 	height: 50px;
@@ -219,7 +276,7 @@ h1 {
 	text-align: center;
 	border: 1px solid white;
 	background: rgba(16, 97, 41, .8);
-	margin: 2rem auto 0 auto;
+	margin: 4rem auto 0 auto;
 	border-top-left-radius: .5rem;
 	border-top-right-radius: .5rem;
 	display: flex;
@@ -233,14 +290,14 @@ h1 {
 	color: white;
 	font-size: 2rem;
 	cursor: default;
-	font-weight: 500;
+	font-weight: 400;
 	height: 50px;
 	width: 632px;
 	text-align: center;
 	border: 1px solid white;
 	border-bottom: none;
 	background: rgba(201, 30, 30, .8);
-	margin: 2rem auto 0 auto;
+	margin: 4rem auto 0 auto;
 	border-top-left-radius: .5rem;
 	border-top-right-radius: .5rem;
 	display: flex;
@@ -257,6 +314,7 @@ h1 {
 #moveUserGuess {
 	position: relative;
 	left: -50%;
+	height:50px;
 }
 
 .fact {
@@ -265,7 +323,7 @@ h1 {
 	cursor: default;
 	font-size: 1.7rem;
 	font-family: 'Julius Sans One';
-	font-weight: 500;
+	font-weight: 200;
 	width: 600px;
 	text-align: center;
 	padding: 1rem;
@@ -278,6 +336,80 @@ h1 {
 	display: flex;
 	justify-content: center; /* align horizontal */
 	align-items: center;
+}
+
+.footerContainer {
+	display: none;
+	position: fixed;
+	width: 1280px;
+	height: 70px;
+	bottom: 0;
+}
+
+/*Adjusting for Footer */
+
+.questionContainerAdjustForFooter {
+	font-family: 'Julius Sans One';
+	text-align: center;
+	color: white;
+	height: 50px;
+	margin: 0 auto 4.5rem auto;
+	font-size: 3rem;
+}
+
+.questionOneAdjustForFooter {
+	width: 96%;
+	min-width: 1222px;
+	margin: 4.5rem auto 0 auto;
+}
+
+.guessBoxAdjustForFooter {
+	margin: 3rem auto 0 auto;
+	width: 520px;
+	height: 70px;
+	display: flex;
+	justify-content: center; /* align horizontal */
+	align-items: center;
+	color: white;
+	font-family: 'Julius Sans One';
+	font-size: 1.8rem;
+	font-weight: 400;
+	background-color: rgba(0, 0, 0, 0.4);
+	border: 1px solid white;
+	border-radius: .6rem;
+}
+
+/*End Adjusting for Footer */
+
+.userAnswerBox {
+	border: solid 1px white;
+	display: inline-block;
+	width: 245px;
+	margin: 5px auto 0 auto;
+	height: 60px;
+	border-radius: .5rem;
+}
+
+.userAnswerText {
+	font-family: 'Julius Sans One';
+	color: white;
+	font-weight: 400;
+	width: 230px;
+	text-align: center;
+	display: block;
+	height: 20px;
+	margin: 20px auto 0 auto;
+	letter-spacing: 1px;
+	cursor: default;
+}
+
+.userAnswerTextOpacity {
+	color: rgba(255, 255, 255, .7);
+}
+
+.backgroundOpacity {
+	background-color: black;
+	opacity: .5;
 }
 
 .opacityFeature {
@@ -299,9 +431,24 @@ h1 {
 	padding-left: 10px;
 }
 
+.questionOneTopSpacing {
+	margin-top: 52px;
+}
+
 .onClick {
 	opacity: .7;
 }
+
+/* Question 1 images */
+
+/* Background */
+
+.backgroundQuestionOne {
+	background-image: url(../media/questionOne/coruscant.jpg);
+    background-size: cover;
+}
+
+/* Question 2 Images */
 
 .darthNihilusIMG {
 	background: url(../media/questionOne/darthNihilus.jpg);
@@ -323,17 +470,62 @@ h1 {
 	background-image: url(../media/questionOne/darthBane.jpg);
 }
 
+/* Question 1 Bottom Images */
+
+.darthPlagueisFooterIMG {
+	background-image: url(../media/questionOneBottom/darthPlagueis.jpg);
+}
+
+.darthNihilusFooterIMG {
+	background-image: url(../media/questionOneBottom/darthNihilus.jpg);
+}
+
+.exarKunFooterIMG {
+	background-image: url(../media/questionOneBottom/exarKun.jpg);
+}
+
+.valkorionFooterIMG {
+	background-image: url(../media/questionOneBottom/valkorion.jpg);
+}
+
+.darthBaneFooterIMG {
+	background-image: url(../media/questionOneBottom/darthBane.jpg);
+}
+
+
 /*Question 2 images */
 
-.bethAllusisIMG {
-	background-image: url(../media/bethAllusis.jpg);
+/* Background */
+
+.backgroundQuestionTwo {
+	background-image: url(../media/questionTwo/AT-ATWoods.jpg);
+    background-size: cover;
 }
+
+/* Question Images */
+
+.bethAllusisIMG {
+	background-image: url(../media/questionTwo/bethAllusis.jpg);
+}
+
 .odanUrrIMG {
-	background-image: url(../media/odanUrr.JPG);
+	background-image: url(../media/questionTwo/odanUrr.jpg);
 }
 
 .lordHothIMG {
-	background-image: url(../media/que);
+	background-image: url(../media/questionTwo/lordHoth.jpg);
+}
+
+.delGormoIMG {
+	background-image: url(../media/questionTwo/nKataDelGormo.jpg);
+}
+
+.sateleShanIMG {
+	background-image: url(../media/questionTwo/sateleShan.jpg);
+}
+
+.letterBlack::first-letter {
+	color: black;
 }
 
 

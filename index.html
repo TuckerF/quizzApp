@@ -9,10 +9,10 @@
 	<script src="https://code.jquery.com/jquery.min.js"></script>
 	<script src="js/quiz.js"></script>
 	<script src="https://use.fontawesome.com/96fbd156cf.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Crimson+Text:600|Julius+Sans+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text:600|Julius+Sans+One" rel="stylesheet")
 </head>
 
-<body id="background" class="background">
+<body id="background" class="background backgroundQuestionOne">
 	<div id="absoluteMessageContainer">
 		<div id="moveUserGuess"></div>
 		<div id="messageBox" class="messageBox">
@@ -29,61 +29,75 @@
 
 		<!-- QUESTION 1 -->
 
-	<div id="questionOne">	
-		<h1>Who taught Darth Sideous?</h1>
-		<div class="answerBlock"> 
-			<div id="answerOne" class="border answerOne">
-				<div id="imageOne" class="darthNihilusIMG images">
-					<span id="textOne" class="optionText">
-					Darth Nihilus
-					</span>
+	<div id="questionOne" class="questionOne">	
+		<div id="questionContainer" class="questionContainer">
+			<span id="header">Who taught Darth Sideous?</span>
+		</div>
+		<div id="answers">
+			<div id="answerBlockOne" class="answerBlock"> 
+				<div id="answerOne" class="border answerOne">
+					<div id="imageOne" class="darthNihilusIMG images">
+						<span id="textOne" class="optionText">Darth Nihilus</span>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="answerBlock"> 
-			<div id="answerTwo" class="border answerTwo">
-				<div id="imageTwo" class="darthPlagueisIMG images">
-					<span id="textTwo" class="optionText">
-					Darth Plagueis
-					</span>
+			<div id="answerBlockTwo" class="answerBlock"> 
+				<div id="answerTwo" class="border answerTwo">
+					<div id="imageTwo" class="darthPlagueisIMG images">
+						<span id="textTwo" class="optionText">Darth Plagueis</span>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="answerBlock"> 
-			<div id="answerThree" class="border answerThree">
-				<div id="imageThree" class="exarKunIMG images">
-					<span id="textThree" class="optionText">
-					Exar Kun
-					</span>
+			<div id="answerBlockThree" class="answerBlock"> 
+				<div id="answerThree" class="border answerThree">
+					<div id="imageThree" class="exarKunIMG images">
+						<span id="textThree" class="optionText">Exar Kun</span>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="answerBlock"> 
-			<div id="answerFour" class="border answerFour">
-				<div id="imageFour" class="valkorionIMG images">
-					<span id="textFour" class="optionText">
-					Valkorion
-					</span>
+			<div id="answerBlockFour" class="answerBlock"> 
+				<div id="answerFour" class="border answerFour">
+					<div id="imageFour" class="valkorionIMG images">
+						<div id="textFour" class="optionText">Valkorion</div>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="answerBlock"> 
-			<div id="answerFive" class="border answerFive">
-				<div id="imageFive" class="darthBaneIMG images">
-					<span id="textFive" class="optionText">
-					Darth Bane
-					</span>
+			<div id="answerBlockFive" class="answerBlock"> 
+				<div id="answerFive" class="border answerFive">
+					<div id="imageFive" class="darthBaneIMG images">
+						<span id="textFive" class="optionText">Darth Bane</span>
+					</div>
 				</div>
-			</div>
-		</div>
 			</div>
 		</div>
 	</div>
-	<div id="guessBox">
-		<div id="userGuess" class="userGuess">Select Icon</div>
-		<div id="guessButton">Submit</div>
+	</div>
+	<div id="guessBoxContainer"> 
+		<div id="guessBox" class="guessBox">
+			<div id="userGuess" class="userGuess">Select Icon</div>
+			<div id="guessButton" class="guessButtonOne enterKeyPress">Submit</div>
+		</div>
 	</div>
 	<div id="warningMessage"></div>
+	<div id="footer" class="footerContainer">
+		<div>
+			<div id="userAnswerOne" class="userAnswerBox backgroundOpacity">
+				<span id="userAnswerOneText" class="userAnswerText">Darth Plageuis</span>
+			</div>
+			<div id="userAnswerTwo" class="userAnswerBox backgroundOpacity">
+				<span id="userAnswerTwoText" class="userAnswerText">Question Two</span>
+			</div>
+			<div id="userAnswerThree" class="userAnswerBox backgroundOpacity">
+				<span id="userAnswerThreeText" class="userAnswerText">Question Three</span>
+			</div>
+			<div id="userAnswerFour" class="userAnswerBox backgroundOpacity">
+				<span id="userAnswerFourText" class="userAnswerText">Question Four</span>
+			</div>
+			<div id="userAnswerFive" class="userAnswerBox backgroundOpacity">
+				<span id="userAnswerFiveText" class="userAnswerText">Question Five</span>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
  
