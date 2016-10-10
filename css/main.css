@@ -9,6 +9,8 @@ body {
 }
 
 .background {
+	background-image: url(../media/questionOne/coruscant.jpg);
+    background-size: cover;
 	height: 100%;
     margin: 0;
   	background-repeat: no-repeat;
@@ -24,170 +26,81 @@ body {
 	left: 50%;
 }
 
-
-.questionContainer {
-	font-family: 'Julius Sans One';
-	text-align: center;
-	color: white;
-	height: 50px;
-	margin: 0 auto 6rem auto;
-	font-size: 3rem;
-}
-
-h1 {
-	display: inline;
-}
-
-#header {
-	cursor: default;
-}
-
-.questionOne {
-	width: 96%;
-	min-width: 1222px;
-	margin: 6rem auto 0 auto;
-}
-
-.border {
-	height: 200px;
-	width: 200px;
-	border-radius: 20%;
-	margin: 0 auto 0 auto;
-	border:solid 10px rgba(255, 255, 255, 0.4);
-}
-
-.border2 {
-	height: 200px;
-	width: 200px;
-	border-radius: 20%;
-	margin: 0 auto 0 auto;
-	border:solid 10px rgba(0, 0, 0, 1);}
-
-.answerBlock {
-	display: inline-block;
-	width: 240px;
-	height: 240px;
-}
-
-.images {
-	height: 200px;
-	width: 200px;
-	margin: 0 auto 0 auto;
+#moveUserGuess {
 	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-	border-radius: 17%;
+	left: -50%;
+	height:50px;
 }
 
-.optionText {
-	font-family: 'Julius Sans One';
-	color: white;
-	font-weight: 400;
-	font-size: 1.3rem;
-	width: 200px;
-	height:46px;
-	padding-top: 23px;
-	text-align: center;
+#messageBox {
+	position: relative;
+	left: -50%;
+}
+
+.incorrectMessage {
 	display: block;
-	margin: 0 auto 0 auto;
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-	letter-spacing: 1px;
-	cursor: default;
-}
-
-.optionTextGormo {
-	font-family: 'Julius Sans One';
 	color: white;
-	font-weight: 400;
-	font-size: 1.3rem;
-	width: 200px;
-	height:46px;
-	text-align: center;
-	display: block;
-	margin: 0 auto 0 auto;
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-	letter-spacing: 1px;
+	font-size: 2rem;
 	cursor: default;
-}
-
-.guessBox {
-	margin: 4rem auto 0 auto;
-	width: 520px;
-	height: 70px;
+	font-weight: 400;
+	height: 65px;
+	width: 632px;
+	text-align: center;
+	border: 1px solid white;
+	border-bottom: none;
+	background: rgba(201, 30, 30, .8);
+	margin: 3rem auto 0 auto;
+	border-top-left-radius: .5rem;
+	border-top-right-radius: .5rem;
 	display: flex;
 	justify-content: center; /* align horizontal */
 	align-items: center;
-	color: white;
-	font-family: 'Julius Sans One';
-	font-size: 1.8rem;
-	font-weight: 400;
-	background-color: rgba(0, 0, 0, 0.4);
-	border: 1px solid white;
-	border-radius: .6rem;
+	padding-bottom: 5px;
 }
 
-.guessBoxOnSubmit {
-	margin: 4rem auto 0 auto;
-	width: 400px;
-	height: 70px;
+.correctMessage {
+	display: block;
+	color: white;
+	font-size: 2rem;
+	font-weight: 400;
+	cursor: default;
+	font-family: "Julius Sans One";
+	height: 65px;
+	width: 632px;
+	text-align: center;
+	border: 1px solid white;
+	border-bottom: none;
+	background: rgba(16, 97, 41, .8);
+	margin: 3rem auto 0 auto;
+	border-top-left-radius: .5rem;
+	border-top-right-radius: .5rem;
 	display: flex;
 	justify-content: center; /* align horizontal */
 	align-items: center;
-	color: white;
+	padding-bottom: 5px;
+}
+
+.plageuisFact {
+	display: block;
+	line-height: 1.4;
+	color: black;
+	cursor: default;
+	font-size: 1.5rem;
 	font-family: 'Julius Sans One';
-	font-size: 1.8rem;
 	font-weight: 400;
-	background-color: rgba(0, 0, 0, 0.4);
-	border: 1px solid white;
-	border-radius: .6rem;
-}
-
-.guessBoxIncorrect {
-	margin-top: 0rem;
-	background-color: rgba(0, 0, 0, 0.8);
-	color : white;
-	border : 1px solid white;
-}
-
-.guessBoxContainer {
-	margin-top: 2rem;
-}
-
-.guessBoxCorrect {
-	margin-top: 0rem;
-	background-color: rgba(0, 0, 0, 0.8);
-	color: white;
-	border: 1px solid white;
-}
-
-#guessButton {
-	display: inline-block;
-	border-left: solid white 1px;
+	width: 600px;
 	text-align: center;
-	height: 53px;
-	padding-top: 17px;
-	width: 180px;
-	border-top-right-radius: .6rem;
-	border-bottom-right-radius: .6rem;
-	-webkit-transition: background .5s ease-in-out;
-	-moz-transition: background .5s ease-in-out;
-	-ms-transition: background .5s ease-in-out;
-	-o-transition: background .5s ease-in-out;
-	transition: background .5s ease-in-out;
-}
-
-#guessButton:hover {
-	background-color: rgba(0, 0, 0, 1);
-	cursor: pointer;
-	-webkit-transition: background .5s ease-in-out;
-	-moz-transition: background .5s ease-in-out;
-	-ms-transition: background .5s ease-in-out;
-	-o-transition: background .5s ease-in-out;
-	transition: background .5s ease-in-out;
+	padding: 1rem;
+	border: 1px solid white;
+	border-top: none;
+	border-bottom-left-radius: .5rem;
+	border-bottom-right-radius: .5rem;
+	background-image: url(../media/questionOneNewBackground/darthPlagueis.jpg);
+	background-size: cover;
+	margin: -1px auto 0 auto;
+	display: flex;
+	justify-content: center; /* align horizontal */
+	align-items: center;
 }
 
 #nextContainer {
@@ -199,9 +112,9 @@ h1 {
 	color: white;
 	font-family: 'Julius Sans One';
 	font-size: 1.6rem;
-	font-weight: 400px;
+	font-weight: 400;
 	display: flex;
-	margin-top: 2rem;
+	margin-top: 1.5rem;
 	justify-content: center; /* align horizontal */
 	align-items: center;
 	float: right;
@@ -231,6 +144,80 @@ h1 {
 	transition: background .5s ease-in-out;
 }
 
+.headerOne {
+	cursor: default;
+	font-family: 'Julius Sans One';
+	text-align: center;
+	color: white;
+	height: 50px;
+	margin: 0 auto 6rem auto;
+	font-size: 3rem;
+}
+
+.questionContainer {
+	width: 96%;
+	min-width: 1222px;
+	margin: 6rem auto 0 auto;
+}
+
+.answerBlock {
+	display: inline-block;
+	width: 240px;
+	height: 240px;
+}
+
+.border {
+	height: 200px;
+	width: 200px;
+	border-radius: 20%;
+	margin: 0 auto 0 auto;
+	border:solid 10px rgba(255, 255, 255, 0.4);
+}
+
+.images {
+	height: 200px;
+	width: 200px;
+	margin: 0 auto 0 auto;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	border-radius: 17%;
+}
+
+.text {
+	font-family: 'Julius Sans One';
+	color: white;
+	font-weight: 400;
+	font-size: 1.3rem;
+	width: 200px;
+	height:46px;
+	padding-top: 23px;
+	text-align: center;
+	display: block;
+	margin: 0 auto 0 auto;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	letter-spacing: 1px;
+	cursor: default;
+}
+
+.guessBox {
+	margin: 4rem auto 0 auto;
+	width: 520px;
+	height: 70px;
+	display: flex;
+	justify-content: center; /* align horizontal */
+	align-items: center;
+	color: white;
+	font-family: 'Julius Sans One';
+	font-size: 1.8rem;
+	font-weight: 400;
+	background-color: rgba(0, 0, 0, 0.4);
+	border: 1px solid white;
+	border-radius: .6rem;
+}
+
 .userGuess {
 	width: 340px;
 	font-size: 1.7rem;
@@ -238,15 +225,33 @@ h1 {
 	text-align:center;
 }
 
-.userGuessFontChange {
-	width: 340px;
-	font-size: 2rem;
-	cursor: default;
-	text-align:center;
+#guessButton {
+	display: inline-block;
+	border-left: solid white 1px;
+	text-align: center;
+	height: 53px;
+	padding-top: 17px;
+	width: 180px;
+	border-top-right-radius: .6rem;
+	border-bottom-right-radius: .6rem;
+	-webkit-transition: background .5s ease-in-out;
+	-moz-transition: background .5s ease-in-out;
+	-ms-transition: background .5s ease-in-out;
+	-o-transition: background .5s ease-in-out;
+	transition: background .5s ease-in-out;
+}
+
+#guessButton:hover {
+	background-color: rgba(0, 0, 0, 1);
+	cursor: pointer;
+	-webkit-transition: background .5s ease-in-out;
+	-moz-transition: background .5s ease-in-out;
+	-ms-transition: background .5s ease-in-out;
+	-o-transition: background .5s ease-in-out;
+	transition: background .5s ease-in-out;
 }
 
 .warningMessage {
-	display: block;
 	color: white;
 	font-size: 1.3rem;
 	font-weight: 400;
@@ -264,81 +269,6 @@ h1 {
 	padding-bottom: 5px;
 }
 
-.correctMessage {
-	display: block;
-	color: white;
-	font-size: 2rem;
-	font-weight: 400;
-	cursor: default;
-	font-family: "Julius Sans One";
-	height: 50px;
-	width: 632px;
-	text-align: center;
-	border: 1px solid white;
-	background: rgba(16, 97, 41, .8);
-	margin: 4rem auto 0 auto;
-	border-top-left-radius: .5rem;
-	border-top-right-radius: .5rem;
-	display: flex;
-	justify-content: center; /* align horizontal */
-	align-items: center;
-	padding-bottom: 5px;
-}
-
-.incorrectMessage {
-	display: block;
-	color: white;
-	font-size: 2rem;
-	cursor: default;
-	font-weight: 400;
-	height: 50px;
-	width: 632px;
-	text-align: center;
-	border: 1px solid white;
-	border-bottom: none;
-	background: rgba(201, 30, 30, .8);
-	margin: 4rem auto 0 auto;
-	border-top-left-radius: .5rem;
-	border-top-right-radius: .5rem;
-	display: flex;
-	justify-content: center; /* align horizontal */
-	align-items: center;
-	padding-bottom: 5px;
-}
-
-#messageBox {
-	position: relative;
-	left: -50%;
-}
-
-#moveUserGuess {
-	position: relative;
-	left: -50%;
-	height:50px;
-}
-
-.fact {
-	display: block;
-	line-height: 1.4;
-	color: white;
-	cursor: default;
-	font-size: 1.5rem;
-	font-family: 'Julius Sans One';
-	font-weight: 200;
-	width: 600px;
-	text-align: center;
-	padding: 1rem;
-	border: 1px solid white;
-	border-top: none;
-	border-bottom-left-radius: .5rem;
-	border-bottom-right-radius: .5rem;
-	background: rgba(0, 0, 0, .8);
-	margin: -1px auto 0 auto;
-	display: flex;
-	justify-content: center; /* align horizontal */
-	align-items: center;
-}
-
 .footerContainer {
 	display: none;
 	position: fixed;
@@ -346,41 +276,6 @@ h1 {
 	height: 70px;
 	bottom: 0;
 }
-
-/*Adjusting for Footer */
-
-.questionContainerAdjustForFooter {
-	font-family: 'Julius Sans One';
-	text-align: center;
-	color: white;
-	height: 50px;
-	margin: 0 auto 4.5rem auto;
-	font-size: 3rem;
-}
-
-.questionOneAdjustForFooter {
-	width: 96%;
-	min-width: 1222px;
-	margin: 4.5rem auto 0 auto;
-}
-
-.guessBoxAdjustForFooter {
-	margin: 3rem auto 0 auto;
-	width: 520px;
-	height: 70px;
-	display: flex;
-	justify-content: center; /* align horizontal */
-	align-items: center;
-	color: white;
-	font-family: 'Julius Sans One';
-	font-size: 1.8rem;
-	font-weight: 400;
-	background-color: rgba(0, 0, 0, 0.4);
-	border: 1px solid white;
-	border-radius: .6rem;
-}
-
-/*End Adjusting for Footer */
 
 .userAnswerBox {
 	border: solid 1px white;
@@ -404,52 +299,7 @@ h1 {
 	cursor: default;
 }
 
-.userAnswerTextOpacity {
-	color: rgba(255, 255, 255, .7);
-}
-
-.backgroundOpacity {
-	background-color: black;
-	opacity: .5;
-}
-
-.opacityFeature {
-	opacity:.6;
-	-webkit-transition: opacity .3s ease-in-out;
-	-moz-transition: opacity .3s ease-in-out;
-	-ms-transition: opacity .3s ease-in-out;
-	-o-transition: opacity .3s ease-in-out;
-	transition: opacity .3s ease-in-out;
-	height: 200px;
-	width: 200px;
-}
-
-.spaceRight {
-	padding-right: 10px;
-}
-
-.spaceLeft {
-	padding-left: 10px;
-}
-
-.questionOneTopSpacing {
-	margin-top: 52px;
-}
-
-.onClick {
-	opacity: .7;
-}
-
 /* Question 1 images */
-
-/* Background */
-
-.backgroundQuestionOne {
-	background-image: url(../media/questionOne/coruscant.jpg);
-    background-size: cover;
-}
-
-/* Question 2 Images */
 
 .darthNihilusIMG {
 	background: url(../media/questionOne/darthNihilus.jpg);
@@ -496,15 +346,6 @@ h1 {
 
 /*Question 2 images */
 
-/* Background */
-
-.backgroundQuestionTwo {
-	background-image: url(../media/questionTwo/AT-ATWoods.jpg);
-    background-size: cover;
-}
-
-/* Question Images */
-
 .bethAllusisIMG {
 	background-image: url(../media/questionTwo/bethAllusis.jpg);
 }
@@ -524,12 +365,3 @@ h1 {
 .sateleShanIMG {
 	background-image: url(../media/questionTwo/sateleShan.jpg);
 }
-
-.letterBlack::first-letter {
-	color: black;
-}
-
-
-
-
-

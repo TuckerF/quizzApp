@@ -12,88 +12,84 @@
 	<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
 </head>
 
-<body id="background" class="background backgroundQuestionOne">
+<body id="background" class="background">
 	<div id="absoluteMessageContainer">
 		<div id="moveUserGuess"></div>
-		<div id="messageBox" class="messageBox">
-			<span id="incorrectMessage" class="incorrectMessage">Incorrect</span>
-			<span class="fact">The correct answer was Darth Plagueis. He was a male Dark Lord of the Sith and the master of Darth Sidious. He acquired considerable knowledge in the field of midi-chlorian manipulation, but was ultimately betrayed and murdered by his own apprentice, in accordance with the "Rule of Two." Sidious later recounted the tale of his master's demise to lure Anakin Skywalker to the dark side.</span>
-		</div>
+			<span id="messageBox" class="messageBox">
+				<span id="message" class="incorrecrtMessage">Incorrect</span>
+				<span id="fact" class="plageuisFact">The correct answer was Darth Plagueis. He was a male Dark Lord of the Sith and the master of Darth Sidious. He acquired considerable knowledge in the field of midi-chlorian manipulation, but was ultimately betrayed and murdered by his own apprentice, in accordance with the "Rule of Two." Sidious later recounted the tale of his master's demise to lure Anakin Skywalker to the dark side.</span>
+			</span>
 		<div id="nextContainer">
-			<span id="nextButton" class="tooQuestionTwo nextButton">
+			<span id="nextButton" class="nextButton">
 				Next 
-				<span class="fa fa-long-arrow-right spaceLeft"></span>
+				<span class="fa fa-long-arrow-right"></span>
 			</span>
 		</div>
 	</div>
 
 		<!-- QUESTION 1 -->
-
-	<div id="questionOne" class="questionOne">	
-		<div id="questionContainer" class="questionContainer">
-			<span id="header">Who taught Darth Sideous?</span>
-		</div>
-		<div id="answers">
+		
+	<div id="questionContainer" class="questionContainer">	
+			<div id="header" class="headerOne">Who taught Darth Sideous?</div>
 			<div id="answerBlockOne" class="answerBlock"> 
 				<div id="answerOne" class="border answerOne">
 					<div id="imageOne" class="darthNihilusIMG images">
-						<span id="textOne" class="optionText">Darth Nihilus</span>
+						<span id="textOne" class="text">Darth Nihilus</span>
 					</div>
 				</div>
 			</div>
 			<div id="answerBlockTwo" class="answerBlock"> 
 				<div id="answerTwo" class="border answerTwo">
 					<div id="imageTwo" class="darthPlagueisIMG images">
-						<span id="textTwo" class="optionText">Darth Plagueis</span>
+						<span id="textTwo" class="text">Darth Plagueis</span>
 					</div>
 				</div>
 			</div>
 			<div id="answerBlockThree" class="answerBlock"> 
 				<div id="answerThree" class="border answerThree">
 					<div id="imageThree" class="exarKunIMG images">
-						<span id="textThree" class="optionText">Exar Kun</span>
+						<span id="textThree" class="text">Exar Kun</span>
 					</div>
 				</div>
 			</div>
 			<div id="answerBlockFour" class="answerBlock"> 
 				<div id="answerFour" class="border answerFour">
 					<div id="imageFour" class="valkorionIMG images">
-						<div id="textFour" class="optionText">Valkorion</div>
+						<div id="textFour" class="text">Valkorion</div>
 					</div>
 				</div>
 			</div>
 			<div id="answerBlockFive" class="answerBlock"> 
 				<div id="answerFive" class="border answerFive">
 					<div id="imageFive" class="darthBaneIMG images">
-						<span id="textFive" class="optionText">Darth Bane</span>
+						<span id="textFive" class="text">Darth Bane</span>
 					</div>
 				</div>
 			</div>
-		</div>
 	</div>
 	</div>
-	<div id="guessBoxContainer"> 
-		<div id="guessBox" class="guessBox">
-			<div id="userGuess" class="userGuess">Select Icon</div>
-			<div id="guessButton" class="guessButtonOne enterKeyPress">Submit</div>
-		</div>
+	<div id="guessBox" class="guessBox">
+		<div id="userGuess" class="userGuess">Select Icon</div>
+		<div id="guessButton" class="guessButtonOne">Submit</div>
 	</div>
-	<div id="warningMessage"></div>
+	<div id="warningMessage" class="warningMessage"> 
+		<span class='fa fa-exclamation-triangle'>Please Select an Icon</span>
+	</div>
 	<div id="footer" class="footerContainer">
 		<div>
-			<div id="userAnswerOne" class="userAnswerBox backgroundOpacity">
+			<div id="userAnswerOne" class="userAnswerBox">
 				<span id="userAnswerOneText" class="userAnswerText">Darth Plageuis</span>
 			</div>
-			<div id="userAnswerTwo" class="userAnswerBox backgroundOpacity">
+			<div id="userAnswerTwo" class="userAnswerBox">
 				<span id="userAnswerTwoText" class="userAnswerText">Question Two</span>
 			</div>
-			<div id="userAnswerThree" class="userAnswerBox backgroundOpacity">
+			<div id="userAnswerThree" class="userAnswerBox">
 				<span id="userAnswerThreeText" class="userAnswerText">Question Three</span>
 			</div>
-			<div id="userAnswerFour" class="userAnswerBox backgroundOpacity">
+			<div id="userAnswerFour" class="userAnswerBox">
 				<span id="userAnswerFourText" class="userAnswerText">Question Four</span>
 			</div>
-			<div id="userAnswerFive" class="userAnswerBox backgroundOpacity">
+			<div id="userAnswerFive" class="userAnswerBox">
 				<span id="userAnswerFiveText" class="userAnswerText">Question Five</span>
 			</div>
 		</div>
