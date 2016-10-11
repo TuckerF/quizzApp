@@ -80,7 +80,7 @@ body {
 	padding-bottom: 5px;
 }
 
-.plageuisFact {
+.fact {
 	display: block;
 	line-height: 1.4;
 	color: black;
@@ -144,20 +144,22 @@ body {
 	transition: background .5s ease-in-out;
 }
 
-.headerOne {
+.header {
 	cursor: default;
 	font-family: 'Julius Sans One';
 	text-align: center;
 	color: white;
 	height: 50px;
-	margin: 0 auto 6rem auto;
+	margin: 4rem auto 4rem auto;
 	font-size: 3rem;
 }
+
+
 
 .questionContainer {
 	width: 96%;
 	min-width: 1222px;
-	margin: 6rem auto 0 auto;
+	margin: 0 auto 0 auto;
 }
 
 .answerBlock {
@@ -172,6 +174,19 @@ body {
 	border-radius: 20%;
 	margin: 0 auto 0 auto;
 	border:solid 10px rgba(255, 255, 255, 0.4);
+}
+
+.borderOnClick {
+	height: 200px;
+	width: 200px;
+	border-radius: 20%;
+	opacity:.4;
+	margin: 0 auto 0 auto;
+	border:solid 10px rgba(0, 0, 0, 0.4);
+}
+
+.opacityFeature {
+	opacity: .6;
 }
 
 .images {
@@ -212,22 +227,36 @@ body {
 	color: white;
 	font-family: 'Julius Sans One';
 	font-size: 1.8rem;
-	font-weight: 400;
-	background-color: rgba(0, 0, 0, 0.4);
-	border: 1px solid white;
-	border-radius: .6rem;
 }
 
 .userGuess {
 	width: 340px;
-	font-size: 1.7rem;
+	height: 52px;
+	padding-top: 18px;
+	color: white;
+	font-family: 'Julius Sans One';
+	font-size: 1.8rem;
+	font-weight: 400;
+	background-color: rgba(0, 0, 0, 0.4);
+	border: 1px solid white;
+	border-top-left-radius: .6rem;
+	border-bottom-left-radius: .6rem;
 	cursor: default;
 	text-align:center;
 }
 
-#guessButton {
+.moveUserGuess {
+	margin:0 auto 0 auto;
+	border-radius: .6rem;
+	width: 400px;
+}
+
+.guessButton {
 	display: inline-block;
-	border-left: solid white 1px;
+	background-color: rgba(0, 0, 0, 0.4);
+	cursor: default;
+	border: 1px solid white;
+	border-left: none;
 	text-align: center;
 	height: 53px;
 	padding-top: 17px;
@@ -241,8 +270,8 @@ body {
 	transition: background .5s ease-in-out;
 }
 
-#guessButton:hover {
-	background-color: rgba(0, 0, 0, 1);
+.guessButton:hover {
+	background: rgba(0, 0, 0, 1);
 	cursor: pointer;
 	-webkit-transition: background .5s ease-in-out;
 	-moz-transition: background .5s ease-in-out;
@@ -251,22 +280,23 @@ body {
 	transition: background .5s ease-in-out;
 }
 
+#warningMessage {
+	display: none;
+}
+
 .warningMessage {
 	color: white;
 	font-size: 1.3rem;
 	font-weight: 400;
 	font-family: 'Julius Sans onClick';
-	height: 50px;
+	height: 40px;
 	width: 260px;
+	padding-top: 15px;
 	text-align: center;
 	border: 1px solid white;
 	background: rgba(201, 30, 30, .5);
-	margin: 1.4rem auto 0 auto;
+	margin: 1.2rem auto 0 auto;
 	border-radius: .5rem;
-	display: flex;
-	justify-content: center; /* align horizontal */
-	align-items: center;
-	padding-bottom: 5px;
 }
 
 .footerContainer {
@@ -277,9 +307,14 @@ body {
 	bottom: 0;
 }
 
+.footerOpacity {
+	opacity:.4;
+}
+
 .userAnswerBox {
 	border: solid 1px white;
 	display: inline-block;
+	background-color: rgba(0, 0, 0, .7);
 	width: 245px;
 	margin: 5px auto 0 auto;
 	height: 60px;
