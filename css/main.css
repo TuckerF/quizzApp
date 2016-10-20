@@ -23,19 +23,24 @@ body {
 	position: absolute;
 	z-index: 50;
 	top: 3.5rem;
-	left: 50%;
+	width: 1000px;
+	overflow: hidden;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
+
+.absoluteMessageContainerDelGormo {
+	width: 1000px;
 }
 
 #moveUserGuess {
-	position: relative;
-	left: -50%;
+	float: center;
+	margin-bottom: 3rem;
 	height:50px;
 }
 
-#messageBox {
-	position: relative;
-	left: -50%;
-}
+
 
 .incorrectMessage {
 	display: block;
@@ -80,10 +85,14 @@ body {
 	padding-bottom: 5px;
 }
 
+.delGormoCorrectMessage {
+	width: 932px;
+}
+
 .fact {
 	display: block;
 	line-height: 1.4;
-	color: black;
+	color: white;
 	cursor: default;
 	font-size: 1.5rem;
 	font-family: 'Julius Sans One';
@@ -95,7 +104,6 @@ body {
 	border-top: none;
 	border-bottom-left-radius: .5rem;
 	border-bottom-right-radius: .5rem;
-	background-image: url(../media/questionOneNewBackground/darthPlagueis.jpg);
 	background-size: cover;
 	margin: -1px auto 0 auto;
 	display: flex;
@@ -103,9 +111,25 @@ body {
 	align-items: center;
 }
 
+.factDelGormo {
+	width: 900px;
+}
+
+.factCadBane {
+	width: 900px;
+	color: rgba(255, 255, 255, .9);
+}
+
 #nextContainer {
-	position: relative;
-	left: -50%;
+	float: right;
+}
+
+.nextPlageuis {
+	margin-right: 183px;
+}
+
+.nextDelGormo {
+	margin-right: 33px;
 }
 
 .nextButton {
@@ -154,7 +178,13 @@ body {
 	font-size: 3rem;
 }
 
+.headerBountyHunters {
+	font-size: 2.3rem;
+}
 
+.headerCreatures {
+	font-size: 2.7rem;
+}
 
 .questionContainer {
 	width: 96%;
@@ -186,7 +216,8 @@ body {
 }
 
 .opacityFeature {
-	opacity: .6;
+	opacity: .7;
+	border: 1px solid rgba(255, 255, 255, .6);
 }
 
 .images {
@@ -215,6 +246,15 @@ body {
 	transform: translateY(-50%);
 	letter-spacing: 1px;
 	cursor: default;
+}
+
+.textDelGormo {
+	height: 46px;
+	padding-top: 0;
+}
+
+.blackLetter {
+	color: black;
 }
 
 .guessBox {
@@ -314,7 +354,7 @@ body {
 .userAnswerBox {
 	border: solid 1px white;
 	display: inline-block;
-	background-color: rgba(0, 0, 0, .7);
+	background-color: rgba(0, 0, 0, .5);
 	width: 245px;
 	margin: 5px auto 0 auto;
 	height: 60px;
@@ -354,6 +394,12 @@ body {
 
 .darthBaneIMG {
 	background-image: url(../media/questionOne/darthBane.jpg);
+}
+
+/* Question 1 fact Backgournd */
+
+.questionOneFact {
+	background-image: url(../media/questionOneNewBackground/darthPlagueis.jpg);
 }
 
 /* Question 1 Bottom Images */
@@ -400,3 +446,112 @@ body {
 .sateleShanIMG {
 	background-image: url(../media/questionTwo/sateleShan.jpg);
 }
+
+/* Question 2 fact Backgournd */
+
+.questionTwoFact {
+	background-image: url(../media/questionTwoNewBackground/yodaGreenHand.jpg);
+}
+
+/* Question 2 Bottom Images */
+
+.bethAllusisFooterIMG {
+	background-image: url(../media/questionTwoBottom/bethAllusis.jpg);
+}
+
+.lordHothFooterIMG {
+	background-image: url(../media/questionTwoBottom/lordHoth.jpg);
+}
+
+.delGormoFooterIMG {
+	background-image: url(../media/questionTwoBottom/delGormo.jpg);
+}
+
+.odanUrrFooterIMG {
+	background-image: url(../media/questionTwoBottom/odanUrr.jpg);
+}
+
+.sateleShanFooterIMG {
+	background-image: url(../media/questionTwoBottom/sateleShan.jpg);
+}
+
+/*Question 3 images */
+
+
+.aurraSingIMG {
+	background-image: url(../media/questionThree/aurraSing.jpg);
+}
+
+.bobaFettIMG {
+	background-image: url(../media/questionThree/bobaFett.jpg);
+}
+
+.boskIMG {
+	background-image: url(../media/questionThree/bosk.jpg);
+}
+
+.cadBaneIMG {
+	background-image: url(../media/questionThree/cadBane.jpg);
+}
+
+.dengarIMG {
+	background-image: url(../media/questionThree/dengar.jpg);
+}
+
+/* Question 3 fact Backgournd */
+
+.questionThreeFact {
+	background-image: url(../media/questionThreeNewBackground/cadBane.jpg);
+}
+
+/* Question 3 Bottom Images */
+
+.aurraSingFooterIMG {
+	background-image: url(../media/questionThreeBottom/aurraSing.jpg);
+}
+
+.bobaFettFooterIMG {
+	background-image: url(../media/questionThreeBottom/bobaFett.jpg);
+}
+
+.boskFooterIMG {
+	background-image: url(../media/questionThreeBottom/bosk.jpg);
+}
+
+.cadBaneFooterIMG {
+	background-image: url(../media/questionThreeBottom/cadBane.jpg);
+}
+
+.dengarFooterIMG {
+	background-image: url(../media/questionThreeBottom/dengar.jpg);
+}
+
+/*Question 3 images */
+
+.acklayIMG {
+	background-image: url(../media/questionFour/acklay.jpg);
+}
+
+.bogaIMG {
+	background-image: url(../media/questionFour/boga.jpg);
+}
+
+.energySpiderIMG {
+	background-image: url(../media/questionFour/energySpider.jpg);
+}
+
+.kraytDragonIMG {
+	background-image: url(../media/questionFour/kraytDragon.jpg);
+}
+
+.rishiEelIMG {
+	background-image: url(../media/questionFour/rishiEel.jpg);
+}
+
+/* Question 4 fact Backgournd */
+
+.questionFourFact {
+	background-image: url(../media/questionFourNewBackground/energySpider.jpg);
+}
+
+
