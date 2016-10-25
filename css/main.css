@@ -37,10 +37,117 @@ body {
 #moveUserGuess {
 	float: center;
 	margin-bottom: 3rem;
-	height:50px;
+	height: 50px;
 }
 
+#finalSumUp {
+	display: none;
+	width: 1200px;
+	position: absolute;
+	margin-left: 2rem;
+	margin-top: 5rem;
+}
 
+.position {
+	margin: 2rem auto 2rem auto;
+	color: white;
+	font-family: 'Julius Sans One';
+	background-color: rgba(0, 0, 0, .4);
+	padding: 1rem;
+	border: 1px solid white;
+	border-radius: 10px;
+	font-weight: 400;
+	font-size: 1.8rem;
+}
+
+.fontBackgroundContinuity {
+	font-weight: 400;
+	font-size: 1rem;
+	color: white;
+	font-family: 'Julius Sans One';
+	margin-top: 1.4rem;
+	display: block;
+}
+
+.questionFontSize {
+	font-size: 1.6rem;
+	font-weight: 400;
+	color: white;
+	font-family: 'Julius Sans One';
+	margin-top: 1rem;
+	display: block;
+}
+
+.sixty {
+	margin-left: 230px;
+	margin-right:255px;
+	width: 300px;
+	display: inline-block;
+}
+
+.thirtyEight {
+	width: 350px;
+	display: inline-block;
+}
+
+#questionNumbers {
+	text-align: center;
+	width: 400px;
+	float: left;
+}
+
+#correctAnswers {
+	text-align: center;
+	width: 400px;
+	float: right;
+}
+
+#userAnswers {
+	float: none;
+	text-align: center;
+	width: 400px;
+	overflow: hidden;
+}
+
+.questionNumberOne {
+	background-color: rgba(0, 0, 0, .4);
+	display: inline-block;
+	border: solid 1px white;
+	height: 60px;
+	width: 250px;
+	border-radius: 10px;
+	margin-bottom:10px;
+}
+
+.questionNumber {
+	background-color: rgba(0, 0, 0, .4);
+	display: inline-block;
+	border: solid 1px white;
+	height: 60px;
+	width: 250px;
+	border-radius: 10px;
+	margin:10px;
+}
+
+.answers {
+	background-color: rgba(0, 0, 0, .4);
+	display: inline-block;
+	border: solid 1px white;
+	height: 60px;
+	width: 250px;
+	border-radius: 10px;
+}
+
+.centerPosition {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.questionContainer {
+	width: 96%;
+	min-width: 1222px;
+	margin: 0 auto 0 auto;
+}
 
 .incorrectMessage {
 	display: block;
@@ -49,7 +156,7 @@ body {
 	cursor: default;
 	font-weight: 400;
 	height: 65px;
-	width: 632px;
+	width: 932px;
 	text-align: center;
 	border: 1px solid white;
 	border-bottom: none;
@@ -71,7 +178,7 @@ body {
 	cursor: default;
 	font-family: "Julius Sans One";
 	height: 65px;
-	width: 632px;
+	width: 932px;
 	text-align: center;
 	border: 1px solid white;
 	border-bottom: none;
@@ -85,10 +192,6 @@ body {
 	padding-bottom: 5px;
 }
 
-.delGormoCorrectMessage {
-	width: 932px;
-}
-
 .fact {
 	display: block;
 	line-height: 1.4;
@@ -97,7 +200,7 @@ body {
 	font-size: 1.5rem;
 	font-family: 'Julius Sans One';
 	font-weight: 400;
-	width: 600px;
+	width: 900px;
 	text-align: center;
 	padding: 1rem;
 	border: 1px solid white;
@@ -124,25 +227,16 @@ body {
 	float: right;
 }
 
-.nextPlageuis {
-	margin-right: 183px;
-}
-
-.nextDelGormo {
-	margin-right: 33px;
-}
-
 .nextButton {
 	color: white;
 	font-family: 'Julius Sans One';
 	font-size: 1.6rem;
 	font-weight: 400;
 	display: flex;
-	margin-top: 1.5rem;
+	margin:1.5rem 33px 2rem 0;
 	justify-content: center; /* align horizontal */
 	align-items: center;
 	float: right;
-	margin-bottom: 2rem;
 	height: 65px;
 	width: 150px;
 	background-color: rgba(0, 0, 0, .7);
@@ -184,12 +278,6 @@ body {
 
 .headerCreatures {
 	font-size: 2.7rem;
-}
-
-.questionContainer {
-	width: 96%;
-	min-width: 1222px;
-	margin: 0 auto 0 auto;
 }
 
 .answerBlock {
@@ -255,6 +343,10 @@ body {
 
 .blackLetter {
 	color: black;
+}
+
+.greyLetter {
+	color:rgb(170, 170, 170);
 }
 
 .guessBox {
@@ -335,7 +427,7 @@ body {
 	text-align: center;
 	border: 1px solid white;
 	background: rgba(201, 30, 30, .5);
-	margin: 1.2rem auto 0 auto;
+	margin: 22px auto 0 auto;
 	border-radius: .5rem;
 }
 
@@ -526,7 +618,7 @@ body {
 	background-image: url(../media/questionThreeBottom/dengar.jpg);
 }
 
-/*Question 3 images */
+/*Question 4 images */
 
 .acklayIMG {
 	background-image: url(../media/questionFour/acklay.jpg);
@@ -553,5 +645,83 @@ body {
 .questionFourFact {
 	background-image: url(../media/questionFourNewBackground/energySpider.jpg);
 }
+
+/* Question 4 Bottom Images */
+
+.acklayFooterIMG {
+	background-image: url(../media/questionFourBottom/acklay.jpg);
+}
+
+.bogaFooterIMG {
+	background-image: url(../media/questionFourBottom/boga.jpg);
+}
+
+.energySpiderFooterIMG {
+	background-image: url(../media/questionFourBottom/energySpider.jpg);
+}
+
+.kraytDragonFooterIMG {
+	background-image: url(../media/questionFourBottom/kraytDragon.jpg);
+}
+
+.rishiEelFooterIMG {
+	background-image: url(../media/questionFourBottom/rishiEel.jpg);
+}
+
+/*Question 5 images */
+
+.countDookuIMG {
+	background-image: url(../media/questionFive/countDooku.jpg);
+}
+
+.darthMaulIMG {
+	background-image: url(../media/questionFive/darthMaul.jpg);
+}
+
+.darthRevanIMG {
+	background-image: url(../media/questionFive/darthRevan.jpg);
+}
+
+.obiWanKenobiIMG {
+	background-image: url(../media/questionFive/obiWanKenobi.jpg);
+}
+
+.sifoDyasIMG {
+	background-image: url(../media/questionFive/sifoDyas.jpg);
+}
+
+/* Question 5 fact Backgournd */
+
+.questionFiveFact {
+	background-image: url(../media/questionFiveNewBackground/sifoDyas.jpg);
+}
+
+/* final images */
+
+.darthNihilusFinalIMG {
+	background: url(../media/final/questionOne/darthNihilus.jpg);
+}
+
+.darthPlagueisFinalIMG {
+	background-image: url(../media/final/questionOne/darthPlagueis.jpg);
+}
+
+.exarKunFinalIMG {
+	background-image: url(../media/final/questionOne/exarKun.jpg);
+}
+
+.valkorionFinalIMG {
+	background-image: url(../media/final/questionOne/valkorion.png);
+}
+
+.darthBaneFinalIMG {
+	background-image: url(../media/final/questionOne/darthBane.jpg);
+}
+
+
+
+
+
+
 
 

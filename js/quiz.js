@@ -120,7 +120,7 @@ $(document).keypress(function(e){
 			$("#userGuess").appendTo("#moveUserGuess").addClass("moveUserGuess");
 			$("#header").empty();
 			$("#absoluteMessageContainer").fadeIn(500);
-			$("#questionContainer").fadeTo(400, .5);
+			$("#questionContainer").fadeTo(500, .5);
 			$("#answerOne").removeClass("answerOne answerOneOpacity");
 			$("#answerTwo").removeClass("answerTwo answerTwoOpacity");
 			$("#answerThree").removeClass("answerThree answerThreeOpacity");
@@ -136,7 +136,7 @@ $(document).keypress(function(e){
 			$("#message").removeClass("correctMessage").addClass("incorrectMessage").empty().append("Incorrect");
 			$("#fact").empty().append("The correct answer was Darth Plagueis, he was a male Dark Lord of the Sith and the master of Darth Sidious. He acquired considerable knowledge in the field of midi-chlorian manipulation, but was ultimately betrayed and murdered by his own apprentice, in accordance with the \"Rule of Two.\" Sidious later recounted the tale of his master's demise to lure Anakin Skywalker to the dark side.")
 			$("#absoluteMessageContainer").fadeIn(500);
-			$("#questionContainer").fadeTo(400, .5);
+			$("#questionContainer").fadeTo(500, .5);
 			$("#answerOne").removeClass("answerOne answerOneOpacity");
 			$("#answerTwo").removeClass("answerTwo answerTwoOpacity");
 			$("#answerThree").removeClass("answerThree answerThreeOpacity");
@@ -182,7 +182,9 @@ $(document).keypress(function(e){
 
 //Goes To Questin Two
 	$("#nextButtonOne").click(function(){
-		$("#nextButtonOne").remove();
+		$("#nextButtonOne").fadeOut(500, function(){
+			$("#nextButtonOne").remove();
+		});
 		$("#questionContainer").fadeOut(500, function(){
 			$("#userGuess").remove();
 			$(".borderOnClick").fadeTo(10, 1);
@@ -206,8 +208,8 @@ $(document).keypress(function(e){
 		$("#absoluteMessageContainer").addClass("absoluteMessageContainerDelGormo").fadeOut(500, function(){
 			$("#message").remove();
 			$("#fact").remove();
-			$("#messageBox").append("<span id='message' class='correctMessage delGormoCorrectMessage'>Correct !</span><span id='fact' class='fact factDelGormo questionTwoFact'>According to legend N'Kata Del Gormo a four limbed, serpentine Jedi was residing on a swamp world when two visitors crossed his path; a young hermit named Yoda and a human friend whom had crash landed on the world. They came to Del Gormo for assistance and he recognized and began their training as Jedi. Sometime later, a Galactic Republic starship landed on the planet, answering the distress call that had been sent from Yoda's ship before the crash. Departing the world, Yoda would go  to Coruscant where he would continue his training at the Jedi Temple, eventually ascending to the rank  of Grand Master.</span>");
-			$("#nextContainer").append("<span id='nextButtonTwo' class='nextButton nextDelGormo'>Next<span class='fa fa-long-arrow-right'></span></span>");//adds new next button
+			$("#messageBox").append("<span id='message' class='correctMessage'>Correct !</span><span id='fact' class='fact factDelGormo questionTwoFact'>According to legend N'Kata Del Gormo a four limbed, serpentine Jedi was residing on a swamp world when two visitors crossed his path; a young hermit named Yoda and a human friend whom had crash landed on the world. They came to Del Gormo for assistance and he recognized and began their training as Jedi. Sometime later, a Galactic Republic starship landed on the planet, answering the distress call that had been sent from Yoda's ship before the crash. Departing the world, Yoda would go  to Coruscant where he would continue his training at the Jedi Temple, eventually ascending to the rank  of Grand Master.</span>");
+			$("#nextContainer").append("<span id='nextButtonTwo' class='nextButton'>Next<span class='fa fa-long-arrow-right'></span></span>");//adds new next button
 		});
 		$("#footer").delay(500).fadeIn(500);
 		$("#questionContainer").fadeTo(10, 1).fadeIn(500);
@@ -234,7 +236,7 @@ $(document).keypress(function(e){
 			$("#userGuess").appendTo("#moveUserGuess").addClass("moveUserGuess");
 			$("#header").empty();
 			$("#absoluteMessageContainer").fadeIn(500);
-			$("#questionContainer").fadeTo(400, .5);
+			$("#questionContainer").fadeTo(500, .5);
 			$("#answerOne").removeClass("answerOne answerOneOpacity");
 			$("#answerTwo").removeClass("answerTwo answerTwoOpacity");
 			$("#answerThree").removeClass("answerThree answerThreeOpacity");
@@ -254,7 +256,7 @@ $(document).keypress(function(e){
 			$("#userGuess").appendTo("#moveUserGuess").addClass("moveUserGuess");
 			$("#header").empty();
 			$("#absoluteMessageContainer").fadeIn(500);
-			$("#questionContainer").fadeTo(400, .5);
+			$("#questionContainer").fadeTo(500, .5);
 			$("#answerOne").removeClass("answerOne answerOneOpacity");
 			$("#answerTwo").removeClass("answerTwo answerTwoOpacity");
 			$("#answerThree").removeClass("answerThree answerThreeOpacity");
@@ -285,7 +287,9 @@ $(document).keypress(function(e){
 //Goes To Quesiton Three	
 	$(document).on('click', '#nextButtonTwo', function(){
 		console.log("clicked");
-		$("#nextButtonTwo").remove();
+		$("#nextButtonTwo").fadeOut(500, function(){
+			$("#nextButtonTwo").remove();
+		});
 		$("#questionContainer").fadeOut(500, function(){
 			$("#userGuess").remove();
 			$(".borderOnClick").fadeTo(10, 1);
@@ -309,8 +313,8 @@ $(document).keypress(function(e){
 		$("#absoluteMessageContainer").addClass("absoluteMessageContainerDelGormo").fadeOut(500, function(){
 			$("#message").remove();
 			$("#fact").remove();
-			$("#messageBox").append("<span id='message' class='correctMessage delGormoCorrectMessage'>Correct !</span><span id='fact' class='fact factCadBane questionThreeFact'>Cad Bane was a Duros male bounty hunter who came to prominence in the galaxy during the Clone Wars due to the death of Jango Fett at the Battle of Geonosis. He specialized in fighting Jedi and earned a reputation as the galaxy’s best, deadliest, and most fearsome mercenary during the Cone Wars. Though he worked for a number of clients, his loyalty was ultimately to credits and by extension, the highest bidder.  His renown attracted the attention of Count Dooku and eventually the Dark Lord of the Sith, Darth Sidious, the latter of whom employed Bane in pursuit of his own means numerous times.</span>");
-			$("#nextContainer").append("<span id='nextButtonThree' class='nextButton nextDelGormo'>Next<span class='fa fa-long-arrow-right'></span></span>");//adds new next button
+			$("#messageBox").append("<span id='message' class='correctMessage'>Correct !</span><span id='fact' class='fact factCadBane questionThreeFact'>Cad Bane was a Duros male bounty hunter who came to prominence in the galaxy during the Clone Wars due to the death of Jango Fett at the Battle of Geonosis. He specialized in fighting Jedi and earned a reputation as the galaxy’s best, deadliest, and most fearsome mercenary during the Cone Wars. Though he worked for a number of clients, his loyalty was ultimately to credits and by extension, the highest bidder.  His renown attracted the attention of Count Dooku and eventually the Dark Lord of the Sith, Darth Sidious, the latter of whom employed Bane in pursuit of his own means numerous times.</span>");
+			$("#nextContainer").append("<span id='nextButtonThree' class='nextButton'>Next<span class='fa fa-long-arrow-right'></span></span>");//adds new next button
 		});
 		$("#footer").delay(500).fadeTo (500, 1);
 		$("#questionContainer").fadeTo(10, 1).fadeIn(500);
@@ -336,7 +340,7 @@ $(document).keypress(function(e){
 			$("#userGuess").appendTo("#moveUserGuess").addClass("moveUserGuess");
 			$("#header").empty();
 			$("#absoluteMessageContainer").fadeIn(500);
-			$("#questionContainer").fadeTo(400, .5);
+			$("#questionContainer").fadeTo(500, .5);
 			$("#answerOne").removeClass("answerOne answerOneOpacity");
 			$("#answerTwo").removeClass("answerTwo answerTwoOpacity");
 			$("#answerThree").removeClass("answerThree answerThreeOpacity");
@@ -357,7 +361,7 @@ $(document).keypress(function(e){
 			$("#header").empty();
 			$("#fact").empty().append("The correct answer was Cad Bane, he was a Duros male bounty hunter who came to prominence in the galaxy during the Clone Wars due to the death of Jango Fett at the Battle of Geonosis. He specialized in fighting Jedi and earned a reputation as the galaxy’s best, deadliest, and most fearsome mercenary during the Cone Wars. Though he worked for a number of clients, his loyalty was ultimately to credits and by extension, the highest bidder.  His renown attracted the attention of Count Dooku and eventually the Dark Lord of the Sith, Darth Sidious, the latter of whom employed Bane in pursuit of his own means numerous times.");
 			$("#absoluteMessageContainer").fadeIn(500);
-			$("#questionContainer").fadeTo(400, .5);
+			$("#questionContainer").fadeTo(500, .5);
 			$("#answerOne").removeClass("answerOne answerOneOpacity");
 			$("#answerTwo").removeClass("answerTwo answerTwoOpacity");
 			$("#answerThree").removeClass("answerThree answerThreeOpacity");
@@ -387,7 +391,9 @@ $(document).keypress(function(e){
 //Goes To Question Four
 	$(document).on('click', '#nextButtonThree', function(){
 		console.log("clicked");
-		$("#nextButtonThree").remove();
+		$("#nextButtonThree").fadeOut(500, function(){
+			$("#nextButtonThree").remove();
+		});
 		$("#questionContainer").fadeOut(500, function(){
 			$("#userGuess").remove();
 			$(".borderOnClick").fadeTo(10, 1);
@@ -411,8 +417,8 @@ $(document).keypress(function(e){
 		$("#absoluteMessageContainer").addClass("absoluteMessageContainerDelGormo").fadeOut(500, function(){
 			$("#message").remove();
 			$("#fact").remove();
-			$("#messageBox").append("<span id='message' class='correctMessage delGormoCorrectMessage'>Correct !</span><span id='fact' class='fact factCadBane questionFourFact'>Energy spiders or spice spiders were arachnids that inhabited the spice mines of Kessel. They lived in complete darkness inside the mine's caves spinning webs made of glitterstim, a  rare kind of spice. The spiders would shoot webbing from their mouths to capture prey, impale them and then quickly suck the life energy from them. The spiders were known to feed on bogeys, as they were sources of pure energy that caused the glitterstim to react and produce light, alerting the spiders to their presence.</span>");
-			$("#nextContainer").append("<span id='nextButtonFour' class='nextButton nextDelGormo'>Next<span class='fa fa-long-arrow-right'></span></span>");//adds new next button
+			$("#messageBox").append("<span id='message' class='correctMessage'>Correct !</span><span id='fact' class='fact factCadBane questionFourFact'>Energy spiders or spice spiders were arachnids that inhabited the spice mines of Kessel. They lived in complete darkness inside the mine's caves spinning webs made of glitterstim, a  rare kind of spice. The spiders would shoot webbing from their mouths to capture prey, impale them and then quickly suck the life energy from them. The spiders were known to feed on bogeys, as they were sources of pure energy that caused the glitterstim to react and produce light, alerting the spiders to their presence.</span>");
+			$("#nextContainer").append("<span id='nextButtonFour' class='nextButton'>Next<span class='fa fa-long-arrow-right'></span></span>");//adds new next button
 		});
 		$("#footer").delay(500).fadeTo (500, 1);
 		$("#questionContainer").fadeTo(10, 1).fadeIn(500);
@@ -438,55 +444,157 @@ $(document).keypress(function(e){
 			$("#userGuess").appendTo("#moveUserGuess").addClass("moveUserGuess");
 			$("#header").empty();
 			$("#absoluteMessageContainer").fadeIn(500);
-			$("#questionContainer").fadeTo(400, .5);
+			$("#questionContainer").fadeTo(500, .5);
 			$("#answerOne").removeClass("answerOne answerOneOpacity");
 			$("#answerTwo").removeClass("answerTwo answerTwoOpacity");
 			$("#answerThree").removeClass("answerThree answerThreeOpacity");
 			$("#answerFour").removeClass("answerFour answerFourOpacity");
 			$("#answerFive").removeClass("answerFive answerFiveOpacity");
 			$("#footer").fadeTo(500, .0, function(){
-				if (guess == "Cad Bane") {
-					$("#userAnswerThree").addClass("cadBaneFooterIMG").removeClass("opacityFeature");
-					$("#userAnswerThreeText").empty().append("Cad Bane");
+				if (guess == "Energy Spider") {
+					$("#userAnswerFour").addClass("energySpiderFooterIMG").removeClass("opacityFeature");
+					$("#userAnswerFourText").empty().append("Energy Spider");
 				}
 			});
 		}
 		else if (guess == "Acklay" || guess == "Boga" || guess == "Krayt Dragon" || guess == "Rishi Eel"){
 			$("#guessButtonFour").remove();
 			$("#message").removeClass("correctMessage").addClass("incorrectMessage").empty().append("Incorrect");
-			$("#nextButtonThree").addClass("enterKeyPress");
+			$("#nextButtonFour").addClass("enterKeyPress");
 			$("#userGuess").appendTo("#moveUserGuess").addClass("moveUserGuess");
 			$("#header").empty();
 			$("#fact").empty().append("The correct answer was an Energy Spider. Energy spiders or spice spiders were arachnids that inhabited the spice mines of Kessel. They lived in complete darkness inside the mine's caves spinning webs made of glitterstim, a  rare kind of spice. The spiders would shoot webbing from their mouths to capture prey, impale them and then quickly suck the life energy from them. The spiders were known to feed on bogeys, as they were sources of pure energy that caused the glitterstim to react and produce light, alerting the spiders to their presence.");
 			$("#absoluteMessageContainer").fadeIn(500);
-			$("#questionContainer").fadeTo(400, .5);
+			$("#questionContainer").fadeTo(500, .5);
 			$("#answerOne").removeClass("answerOne answerOneOpacity");
 			$("#answerTwo").removeClass("answerTwo answerTwoOpacity");
 			$("#answerThree").removeClass("answerThree answerThreeOpacity");
 			$("#answerFour").removeClass("answerFour answerFourOpacity");
 			$("#answerFive").removeClass("answerFive answerFiveOpacity");
 			$("#footer").fadeTo(500, .0, function(){
-				if (guess == "Aurra Sing"){
-					$("#userAnswerThree").addClass("aurraSingFooterIMG").removeClass("opacityFeature");
-					$("#userAnswerThreeText").empty().append("Aur<span class='blackLetter'>ra</span> Sing");
+				if (guess == "Acklay"){
+					$("#userAnswerFour").addClass("acklayFooterIMG").removeClass("opacityFeature");
+					$("#userAnswerFourText").empty().append("Acklay");
 				}
-				else if (guess == "Boba Fett") {
-					$("#userAnswerThree").addClass("bobaFettFooterIMG").removeClass("opacityFeature");
-					$("#userAnswerThreeText").empty().append("Boba Fett");
+				else if (guess == "Boga") {
+					$("#userAnswerFour").addClass("bogaFooterIMG").removeClass("opacityFeature");
+					$("#userAnswerFourText").empty().append("<span class = 'blackLetter'>Bo</span><span class = 'greyLetter'>g</span>a");
 				}
-				else if (guess == "Bosk") {
-					$("#userAnswerThree").addClass("boskFooterIMG").removeClass("opacityFeature");
-					$("#userAnswerThreeText").empty().append("Bo<span class='blackLetter'>sk</span>");
+				else if (guess == "Krayt Dragon") {
+					$("#userAnswerFour").addClass("kraytDragonFooterIMG").removeClass("opacityFeature");
+					$("#userAnswerFourText").empty().append("Krayt Dragon");
 				}
-				else if (guess == "Dengar") {
-					$("#userAnswerThree").addClass("dengarFooterIMG").removeClass("opacityFeature");
-					$("#userAnswerThreeText").empty().append("Dengar");
+				else if (guess == "Rishi Eel") {
+					$("#userAnswerFour").addClass("rishiEelFooterIMG").removeClass("opacityFeature");
+					$("#userAnswerFourText").empty().append("Rishi Eel");
 				}
 			});
 		}
 	});
 
+//Goes To Question Five
+	$(document).on('click', '#nextButtonFour', function(){
+		console.log("clicked");
+		$("#nextButtonFour").fadeOut(500, function(){
+			$("#nextButtonFour").remove();
+		});
+		$("#questionContainer").fadeOut(500, function(){
+			$("#userGuess").remove();
+			$(".borderOnClick").fadeTo(10, 1);
+			$("#header").addClass("headerBountyHunters").append("Which of these beings was responsible for the creation of the Republic’s Clone Army?");
+			$("#answerOne").removeClass("borderOnClick").addClass("answerOne answerOneOpacity");
+				$("#imageOne").removeClass("acklayIMG").addClass("countDookuIMG");
+				$("#textOne").empty().append("Count Dooku");
+			$("#answerTwo").removeClass("borderOnClick").addClass("answerTwo answerTwoOpacity");
+				$("#imageTwo").removeClass("bogaIMG").addClass("darthMaulIMG");
+				$("#textTwo").empty().append("<span class = 'blackLetter'>D</span>arth <span class = 'blackLetter'>M</span>aul");
+			$("#answerThree").removeClass("borderOnClick").addClass("answerThree answerThreeOpacity");
+				$("#imageThree").removeClass("energySpiderIMG").addClass("darthRevanIMG");
+				$("#textThree").empty().append("Darth Revan");
+			$("#answerFour").removeClass("borderOnClick").addClass("answerFour answerFourOpacity");
+				$("#imageFour").removeClass("kraytDragonIMG").addClass("obiWanKenobiIMG");
+				$("#textFour").empty().append("<span class = 'blackLetter'>Obi-Wan</span> Kenobi");
+			$("#answerFive").removeClass("borderOnClick").addClass("answerFive answerFiveOpacity");
+				$("#imageFive").removeClass("rishiEelIMG").addClass("sifoDyasIMG");
+				$("#textFive").empty().append("Sifo Dyas");
+		});
+		$("#absoluteMessageContainer").addClass("absoluteMessageContainerDelGormo").fadeOut(500, function(){
+			$("#message").remove();
+			$("#fact").remove();
+			$("#messageBox").append("<span id='message' class='correctMessage'>Correct !</span><span id='fact' class='fact factCadBane questionFiveFact'>Originally envisioned by Jedi Master Sifo Dyas the clone army consisted of legions of genetically identical soldiers bred to serve the Republic. Sifo Dyas secretly commissioned the Kaminoan cloners to create an army for the Republic, however; the clones ultimately became the secret weapon of the Sith, the ancient enemies of the Jedi Order. The Sith implanted order 66 into the clone’s inhibitor chips and manipulated the Jedi into taking command of the Clone Army so that when the order was issued a simultaneous demise of the Jedi could be accomplished.</span>");
+			$("#nextContainer").append("<span id='nextButtonFive' class='nextButton'>Next<span class='fa fa-long-arrow-right'></span></span>");//adds new next button
+		});
+		$("#footer").delay(500).fadeTo (500, 1);
+		$("#questionContainer").fadeTo(10, 1).fadeIn(500);
+		$("<div id='userGuess' class='userGuess'>Select Icon</div><div id='guessButtonFive' class='guessButton enterKeyPress'>Submit</div>").hide().appendTo("#guessBox").delay(500).fadeIn(500);
+	});
 
+//shows warning sign if the submit button is clicked and no icon has been selected
+
+	$(document).on('click', '#guessButtonFive', function(){
+		var guess = $("#userGuess").text();
+		if (guess == "Select Icon"){
+			$(".warningMessage").show();
+		}
+	});
+
+//right/wrong functionality
+
+	$(document).on('click', '#guessButtonFive', function(){
+		var guess = $("#userGuess").text();
+		if (guess == "Sifo Dyas"){
+			$("#guessButtonFive").remove();
+			$("#nextButtonFive").addClass("enterKeyPress");
+			$("#userGuess").appendTo("#moveUserGuess").addClass("moveUserGuess");
+			$("#header").empty();
+			$("#absoluteMessageContainer").fadeIn(500);
+			$("#questionContainer").fadeTo(500, .5);
+			$("#answerOne").removeClass("answerOne answerOneOpacity");
+			$("#answerTwo").removeClass("answerTwo answerTwoOpacity");
+			$("#answerThree").removeClass("answerThree answerThreeOpacity");
+			$("#answerFour").removeClass("answerFour answerFourOpacity");
+			$("#answerFive").removeClass("answerFive answerFiveOpacity");
+			$("#footer").fadeTo(500, .0, function(){
+				if (guess == "Energy Spider") {
+					$("#userAnswerFour").addClass("energySpiderFooterIMG").removeClass("opacityFeature");
+					$("#userAnswerFourText").empty().append("Energy Spider");
+				}
+			});
+		}
+		else if (guess == "Count Dooku" || guess == "Darth Maul" || guess == "Darth Revan" || guess == "Obi-Wan Kenobi"){
+			$("#guessButtonFive").remove();
+			$("#message").removeClass("correctMessage").addClass("incorrectMessage").empty().append("Incorrect");
+			$("#nextButtonFive").addClass("enterKeyPress");
+			$("#userGuess").appendTo("#moveUserGuess").addClass("moveUserGuess");
+			$("#header").empty();
+			$("#fact").empty().append("The correct answer was Jedi Master Sifo Dyas. The clone army consisted of legions of genetically identical soldiers bred to serve the Republic. Sifo Dyas secretly commissioned the Kaminoan cloners to create an army for the Republic, however; the clones ultimately became the secret weapon of the Sith, the ancient enemies of the Jedi Order. The Sith implanted order 66 into the clone’s inhibitor chips and manipulated the Jedi into taking command of the Clone Army so that when the order was issued a simultaneous demise of the Jedi could be accomplished.");
+			$("#absoluteMessageContainer").fadeIn(500);
+			$("#questionContainer").fadeTo(500, .5);
+			$("#answerOne").removeClass("answerOne answerOneOpacity");
+			$("#answerTwo").removeClass("answerTwo answerTwoOpacity");
+			$("#answerThree").removeClass("answerThree answerThreeOpacity");
+			$("#answerFour").removeClass("answerFour answerFourOpacity");
+			$("#answerFive").removeClass("answerFive answerFiveOpacity");
+			$("#footer").fadeTo(500, .0, function(){
+				if (guess == "Acklay"){
+					$("#userAnswerFour").addClass("acklayFooterIMG").removeClass("opacityFeature");
+					$("#userAnswerFourText").empty().append("Acklay");
+				}
+				else if (guess == "Boga") {
+					$("#userAnswerFour").addClass("bogaFooterIMG").removeClass("opacityFeature");
+					$("#userAnswerFourText").empty().append("<span class = 'blackLetter'>Bo</span><span class = 'greyLetter'>g</span>a");
+				}
+				else if (guess == "Krayt Dragon") {
+					$("#userAnswerFour").addClass("kraytDragonFooterIMG").removeClass("opacityFeature");
+					$("#userAnswerFourText").empty().append("Krayt Dragon");
+				}
+				else if (guess == "Rishi Eel") {
+					$("#userAnswerFour").addClass("rishiEelFooterIMG").removeClass("opacityFeature");
+					$("#userAnswerFourText").empty().append("Rishi Eel");
+				}
+			});
+		}
+	});
 
 });
 
