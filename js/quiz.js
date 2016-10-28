@@ -160,22 +160,32 @@ $(document).keypress(function(e){
 		if (guess == "Darth Nihilus") {
 			$("#userAnswerOne").addClass("darthNihilusFooterIMG").removeClass("opacityFeature");
 				$("#userAnswerOneText").empty().append("Darth Nihilus");
+			$("#finalOne").addClass("darthNihilusFooterIMG");
+			$("#finalTextOne").empty().append("Darth Nihilus");
 		}
 		else if (guess == "Darth Plagueis") {
 			$("#userAnswerOne").addClass("darthPlagueisFooterIMG").removeClass("opacityFeature");
 				$("#userAnswerOneText").empty().append("Darth Plagueis");
+			$("#finalOne").addClass("darthPlagueisFooterIMG");
+			$("#finalTextOne").empty().append("Darth Plagueis");
 		}
 		else if (guess == "Exar Kun") {
 			$("#userAnswerOne").addClass("exarKunFooterIMG").removeClass("opacityFeature");
 				$("#userAnswerOneText").empty().append("Exar Kun");
+			$("#finalOne").addClass("exarKunFooterIMG");
+			$("#finalTextOne").empty().append("Exar Kun");
 		}
 		else if (guess == "Valkorion") {
 			$("#userAnswerOne").addClass("valkorionFooterIMG").removeClass("opacityFeature");
 				$("#userAnswerOneText").empty().append("Valkorion");
+			$("#finalOne").addClass("valkorionFooterIMG");
+			$("#finalTextOne").empty().append("Valkorion");
 		}
 		else if (guess == "Darth Bane") {
 			$("#userAnswerOne").addClass("darthBaneFooterIMG").removeClass("opacityFeature");
 				$("#userAnswerOneText").empty().append("Darth Bane");
+			$("#finalOne").addClass("darthBaneFooterIMG");
+			$("#finalTextOne").empty().append("Darth Bane");
 		}
 	});
 
@@ -246,6 +256,8 @@ $(document).keypress(function(e){
 				if (guess == "N'Kata Del Gormo") {
 					$("#userAnswerTwo").addClass("delGormoFooterIMG").removeClass("opacityFeature");
 					$("#userAnswerTwoText").empty().append("<span class='blackLetter'>N'</span>Kat<span class='blackLetter'>a Del Gor</span>mo");
+					$("#finalTwo").addClass("delGormoFooterIMG");
+					$("#finalTextTwo").empty().append("N'Kata <span class='blackLetter'>Del Gormo</span>");
 				}
 			});
 		}
@@ -266,18 +278,26 @@ $(document).keypress(function(e){
 				if (guess == "Beth Allusis"){
 					$("#userAnswerTwo").addClass("bethAllusisFooterIMG").removeClass("opacityFeature");
 					$("#userAnswerTwoText").empty().append("Beth Allusis");
+					$("#finalTwo").addClass("bethAllusisFooterIMG");
+					$("#finalTextTwo").empty().append("Beth Allusis");
 				}
 				else if (guess == "Lord Hoth") {
 					$("#userAnswerTwo").addClass("lordHothFooterIMG").removeClass("opacityFeature");
 					$("#userAnswerTwoText").empty().append("Lord Hoth");
+					$("#finalTwo").addClass("lordHothFooterIMG");
+					$("#finalTextTwo").empty().append("Lord Hoth");
 				}
 				else if (guess == "Odan Urr") {
 					$("#userAnswerTwo").addClass("odanUrrFooterIMG").removeClass("opacityFeature");
 					$("#userAnswerTwoText").empty().append("<span class='blackLetter'>Oda</span>n Urr");
+					$("#finalTwo").addClass("odanUrrFooterIMG");
+					$("#finalTextTwo").empty().append("Odan Urr");
 				}
 				else if (guess == "Satele Shan") {
 					$("#userAnswerTwo").addClass("sateleShanFooterIMG").removeClass("opacityFeature");
 					$("#userAnswerTwoText").empty().append("Satele Sh<span class='blackLetter'>an</span>");
+					$("#finalTwo").addClass("sateleShanFooterIMG");
+					$("#finalTextTwo").empty().append("Satele Shan");
 				}
 			});
 		}
@@ -350,6 +370,8 @@ $(document).keypress(function(e){
 				if (guess == "Cad Bane") {
 					$("#userAnswerThree").addClass("cadBaneFooterIMG").removeClass("opacityFeature");
 					$("#userAnswerThreeText").empty().append("Cad Bane");
+					$("#finalThree").addClass("cadBaneFooterIMG");
+					$("#finalTextThree").empty().append("Cad Bane");
 				}
 			});
 		}
@@ -371,18 +393,26 @@ $(document).keypress(function(e){
 				if (guess == "Aurra Sing"){
 					$("#userAnswerThree").addClass("aurraSingFooterIMG").removeClass("opacityFeature");
 					$("#userAnswerThreeText").empty().append("Aur<span class='blackLetter'>ra</span> Sing");
+					$("#finalThree").addClass("aurraSingFooterIMG");
+					$("#finalTextThree").empty().append("Aurra Sing");
 				}
 				else if (guess == "Boba Fett") {
 					$("#userAnswerThree").addClass("bobaFettFooterIMG").removeClass("opacityFeature");
 					$("#userAnswerThreeText").empty().append("Boba Fett");
+					$("#finalThree").addClass("bobaFettFooterIMG");
+					$("#finalTextThree").empty().append("Boba Fett");
 				}
 				else if (guess == "Bosk") {
 					$("#userAnswerThree").addClass("boskFooterIMG").removeClass("opacityFeature");
 					$("#userAnswerThreeText").empty().append("Bo<span class='blackLetter'>sk</span>");
+					$("#finalThree").addClass("boskFooterIMG");
+					$("#finalTextThree").empty().append("Bosk");
 				}
 				else if (guess == "Dengar") {
 					$("#userAnswerThree").addClass("dengarFooterIMG").removeClass("opacityFeature");
 					$("#userAnswerThreeText").empty().append("Dengar");
+					$("#finalThree").addClass("dengarFooterIMG");
+					$("#finalTextThree").empty().append("Dengar");
 				}
 			});
 		}
@@ -454,6 +484,8 @@ $(document).keypress(function(e){
 				if (guess == "Energy Spider") {
 					$("#userAnswerFour").addClass("energySpiderFooterIMG").removeClass("opacityFeature");
 					$("#userAnswerFourText").empty().append("Energy Spider");
+					$("#finalFour").addClass("energySpiderFooterIMG");
+					$("#finalTextFour").empty().append("Energy Spider");
 				}
 			});
 		}
@@ -475,18 +507,26 @@ $(document).keypress(function(e){
 				if (guess == "Acklay"){
 					$("#userAnswerFour").addClass("acklayFooterIMG").removeClass("opacityFeature");
 					$("#userAnswerFourText").empty().append("Acklay");
+					$("#finalFour").addClass("acklayFooterIMG");
+					$("#finalTextFour").empty().append("Acklay");
 				}
 				else if (guess == "Boga") {
 					$("#userAnswerFour").addClass("bogaFooterIMG").removeClass("opacityFeature");
 					$("#userAnswerFourText").empty().append("<span class = 'blackLetter'>Bo</span><span class = 'greyLetter'>g</span>a");
+					$("#finalFour").addClass("bogaFooterIMG");
+					$("#finalTextFour").empty().append("<span class='blackLetter'>Bo</span>ga");
 				}
 				else if (guess == "Krayt Dragon") {
 					$("#userAnswerFour").addClass("kraytDragonFooterIMG").removeClass("opacityFeature");
 					$("#userAnswerFourText").empty().append("Krayt Dragon");
+					$("#finalFour").addClass("kraytDragonFooterIMG");
+					$("#finalTextFour").empty().append("Krayt Dragon");
 				}
 				else if (guess == "Rishi Eel") {
 					$("#userAnswerFour").addClass("rishiEelFooterIMG").removeClass("opacityFeature");
 					$("#userAnswerFourText").empty().append("Rishi Eel");
+					$("#finalFour").addClass("rishiEelFooterIMG");
+					$("#finalTextFour").empty().append("Rishi Eel");
 				}
 			});
 		}
@@ -555,9 +595,11 @@ $(document).keypress(function(e){
 			$("#answerFour").removeClass("answerFour answerFourOpacity");
 			$("#answerFive").removeClass("answerFive answerFiveOpacity");
 			$("#footer").fadeTo(500, .0, function(){
-				if (guess == "Energy Spider") {
-					$("#userAnswerFour").addClass("energySpiderFooterIMG").removeClass("opacityFeature");
-					$("#userAnswerFourText").empty().append("Energy Spider");
+				if (guess == "Sifo Dyas") {
+					$("#userAnswerFive").addClass("sifoDyasFooterIMG").removeClass("opacityFeature");
+					$("#userAnswerFiveText").empty().append("Sifo Dyas");
+					$("#finalFive").addClass("sifoDyasFooterIMG");
+					$("#finalTextFive").empty().append("Sifo Dyas");
 				}
 			});
 		}
@@ -576,24 +618,51 @@ $(document).keypress(function(e){
 			$("#answerFour").removeClass("answerFour answerFourOpacity");
 			$("#answerFive").removeClass("answerFive answerFiveOpacity");
 			$("#footer").fadeTo(500, .0, function(){
-				if (guess == "Acklay"){
-					$("#userAnswerFour").addClass("acklayFooterIMG").removeClass("opacityFeature");
-					$("#userAnswerFourText").empty().append("Acklay");
+				if (guess == "Count Dooku"){
+					$("#userAnswerFive").addClass("countDookuFooterIMG").removeClass("opacityFeature");
+					$("#userAnswerFiveText").empty().append("Count Dook<span class='blackLetter'>u</span>");
+					$("#finalFive").addClass("countDookuFooterIMG");
+					$("#finalTextFive").empty().append("Count Dooku");
 				}
-				else if (guess == "Boga") {
-					$("#userAnswerFour").addClass("bogaFooterIMG").removeClass("opacityFeature");
-					$("#userAnswerFourText").empty().append("<span class = 'blackLetter'>Bo</span><span class = 'greyLetter'>g</span>a");
+				else if (guess == "Darth Maul") {
+					$("#userAnswerFive").addClass("darthMaulFooterIMG").removeClass("opacityFeature");
+					$("#userAnswerFiveText").empty().append("Dart<span class='blackLetter'>h</span> Maul");
+					$("#finalFive").addClass("darthMaulFooterIMG");
+					$("#finalTextFive").empty().append("Darth Maul");
 				}
-				else if (guess == "Krayt Dragon") {
-					$("#userAnswerFour").addClass("kraytDragonFooterIMG").removeClass("opacityFeature");
-					$("#userAnswerFourText").empty().append("Krayt Dragon");
+				else if (guess == "Darth Revan") {
+					$("#userAnswerFive").addClass("darthRevanFooterIMG").removeClass("opacityFeature");
+					$("#userAnswerFiveText").empty().append("Darth Revan");
+					$("#finalFive").addClass("darthRevanFooterIMG");
+					$("#finalTextFive").empty().append("Darth Revan");
 				}
-				else if (guess == "Rishi Eel") {
-					$("#userAnswerFour").addClass("rishiEelFooterIMG").removeClass("opacityFeature");
-					$("#userAnswerFourText").empty().append("Rishi Eel");
+				else if (guess == "Obi-Wan Kenobi") {
+					$("#userAnswerFive").addClass("obiWanKenobiFooterIMG").removeClass("opacityFeature");
+					$("#userAnswerFiveText").empty().append("Obi-Wan Kenobi");
+					$("#finalFive").addClass("obiWanKenobiFooterIMG");
+					$("#finalTextFive").empty().append("Obi-Wan Kenobi");
 				}
 			});
 		}
+	});
+
+//Goes To Final wrap up
+	$(document).on('click', '#nextButtonFive', function(){
+		console.log("clicked");
+		$("#nextButtonFour").fadeOut(500, function(){
+			$("#nextButtonFour").remove();
+		});
+		$("#questionContainer").fadeOut(500, function(){
+			$("#userGuess").remove();
+			$(".borderOnClick").fadeTo(10, 1);
+			$("#header").hide();
+		});
+		$("#absoluteMessageContainer").fadeOut(500, function(){
+			$("#message").remove();
+			$("#fact").remove();
+		});
+		$("#footer").delay(500).fadeTo (500, .8);
+		$("#finalSumUp").delay(500).fadeIn(500);
 	});
 
 });

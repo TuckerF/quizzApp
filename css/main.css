@@ -45,7 +45,7 @@ body {
 	width: 1200px;
 	position: absolute;
 	margin-left: 2rem;
-	margin-top: 5rem;
+	margin-top: -3rem;
 }
 
 .position {
@@ -81,11 +81,13 @@ body {
 .sixty {
 	margin-left: 230px;
 	margin-right:255px;
+	margin-bottom: 1rem;
 	width: 300px;
 	display: inline-block;
 }
 
 .thirtyEight {
+	margin-bottom: 1rem;
 	width: 350px;
 	display: inline-block;
 }
@@ -696,29 +698,28 @@ body {
 	background-image: url(../media/questionFiveNewBackground/sifoDyas.jpg);
 }
 
-/* final images */
 
-.darthNihilusFinalIMG {
-	background: url(../media/final/questionOne/darthNihilus.jpg);
+/* Question 5 Bottom Images */
+
+.countDookuFooterIMG {
+	background-image: url(../media/questionFiveBottom/countDooku.jpg);
 }
 
-.darthPlagueisFinalIMG {
-	background-image: url(../media/final/questionOne/darthPlagueis.jpg);
+.darthMaulFooterIMG {
+	background-image: url(../media/questionFiveBottom/darthMaul.jpg);
 }
 
-.exarKunFinalIMG {
-	background-image: url(../media/final/questionOne/exarKun.jpg);
+.darthRevanFooterIMG {
+	background-image: url(../media/questionFiveBottom/darthRevan.jpg);
 }
 
-.valkorionFinalIMG {
-	background-image: url(../media/final/questionOne/valkorion.png);
+.obiWanKenobiFooterIMG {
+	background-image: url(../media/questionFiveBottom/obiWanKenobi.jpg);
 }
 
-.darthBaneFinalIMG {
-	background-image: url(../media/final/questionOne/darthBane.jpg);
+.sifoDyasFooterIMG {
+	background-image: url(../media/questionFiveBottom/sifoDyas.jpg);
 }
-
-
 
 
 
