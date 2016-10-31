@@ -168,6 +168,7 @@ $(document).keypress(function(e){
 				$("#userAnswerOneText").empty().append("Darth Plagueis");
 			$("#finalOne").addClass("darthPlagueisFooterIMG");
 			$("#finalTextOne").empty().append("Darth Plagueis");
+			$("#counterOne").empty().append("1");
 		}
 		else if (guess == "Exar Kun") {
 			$("#userAnswerOne").addClass("exarKunFooterIMG").removeClass("opacityFeature");
@@ -258,6 +259,7 @@ $(document).keypress(function(e){
 					$("#userAnswerTwoText").empty().append("<span class='blackLetter'>N'</span>Kat<span class='blackLetter'>a Del Gor</span>mo");
 					$("#finalTwo").addClass("delGormoFooterIMG");
 					$("#finalTextTwo").empty().append("N'Kata <span class='blackLetter'>Del Gormo</span>");
+					$("#counterTwo").empty().append("1");
 				}
 			});
 		}
@@ -372,6 +374,7 @@ $(document).keypress(function(e){
 					$("#userAnswerThreeText").empty().append("Cad Bane");
 					$("#finalThree").addClass("cadBaneFooterIMG");
 					$("#finalTextThree").empty().append("Cad Bane");
+					$("#counterThree").empty().append("1");
 				}
 			});
 		}
@@ -486,6 +489,7 @@ $(document).keypress(function(e){
 					$("#userAnswerFourText").empty().append("Energy Spider");
 					$("#finalFour").addClass("energySpiderFooterIMG");
 					$("#finalTextFour").empty().append("Energy Spider");
+					$("#counterFour").empty().append("1");
 				}
 			});
 		}
@@ -600,6 +604,7 @@ $(document).keypress(function(e){
 					$("#userAnswerFiveText").empty().append("Sifo Dyas");
 					$("#finalFive").addClass("sifoDyasFooterIMG");
 					$("#finalTextFive").empty().append("Sifo Dyas");
+					$("#counterFive").empty().append("1");
 				}
 			});
 		}
@@ -648,9 +653,8 @@ $(document).keypress(function(e){
 
 //Goes To Final wrap up
 	$(document).on('click', '#nextButtonFive', function(){
-		console.log("clicked");
-		$("#nextButtonFour").fadeOut(500, function(){
-			$("#nextButtonFour").remove();
+		$("#nextButtonFive").fadeOut(500, function(){
+			$("#nextButtonFive").remove();
 		});
 		$("#questionContainer").fadeOut(500, function(){
 			$("#userGuess").remove();
@@ -661,10 +665,21 @@ $(document).keypress(function(e){
 			$("#message").remove();
 			$("#fact").remove();
 		});
-		$("#footer").delay(500).fadeTo (500, .8);
+		$("#footer").delay(500).fadeTo (500, .5);
+		var one = $("#counterOne").text();
+		var two = $("#counterTwo").text();
+		var three = $("#counterThree").text();
+		var four = $("#counterFour").text();
+		var five = $("#counterFive").text();
+		console.log(five);
+		$("#counter").append((+one) + (+two) + (+three) + (+four) + (+five));
 		$("#finalSumUp").delay(500).fadeIn(500);
 	});
 
+	$(".restart").click(function(){
+		location.reload();
+	});
+	
 });
 
 
